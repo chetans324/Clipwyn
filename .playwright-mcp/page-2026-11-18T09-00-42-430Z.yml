@@ -1,0 +1,138 @@
+- generic [active] [ref=f24e1]:
+  - banner [ref=f24e2]:
+    - generic [ref=f24e3]:
+      - link "Clipwyn by Braivex home" [ref=f24e4] [cursor=pointer]:
+        - /url: /
+        - img "Clipwyn by Braivex" [ref=f24e5]
+      - navigation "Legal pages" [ref=f24e6]:
+        - link "Terms" [ref=f24e7] [cursor=pointer]:
+          - /url: /terms
+        - link "Privacy" [ref=f24e8] [cursor=pointer]:
+          - /url: /privacy
+        - link "Acceptable use" [ref=f24e9] [cursor=pointer]:
+          - /url: /acceptable-use
+  - main [ref=f24e10]:
+    - article [ref=f24e11]:
+      - heading "Terms of Service" [level=1] [ref=f24e12]
+      - paragraph [ref=f24e13]: Last updated 13 November 2026
+      - paragraph [ref=f24e14]:
+        - text: These Terms are a binding agreement between you and Braivex ("Clipwyn", "we", "us") for the use of the website and app at http://127.0.0.1:8770 (the "Service"). By creating an account or using the Service you accept these Terms, our
+        - link "Privacy Policy" [ref=f24e15] [cursor=pointer]:
+          - /url: /privacy
+        - text: and our
+        - link "Acceptable Use Policy" [ref=f24e16] [cursor=pointer]:
+          - /url: /acceptable-use
+        - text: . If you do not agree, do not use the Service.
+      - heading "1. The Service" [level=2] [ref=f24e17]
+      - paragraph [ref=f24e18]: Clipwyn finds moments in videos and live streams, cuts them into short vertical clips with captions and titles, and can post them to accounts you connect. Clip selection, captions, titles and other output are produced automatically, partly by artificial intelligence, and may be inaccurate, incomplete or unsuitable. You are responsible for reviewing anything before you publish or rely on it.
+      - heading "2. Your account" [level=2] [ref=f24e19]
+      - list [ref=f24e20]:
+        - listitem [ref=f24e21]: You must be at least 13 years old, or the minimum age to use online services in your country if higher, and able to enter a binding contract.
+        - listitem [ref=f24e22]: Give accurate details, confirm your email address and keep your sign-in details secure. You are responsible for all activity in your account.
+        - listitem [ref=f24e23]: One person per account.
+      - heading "3. Your content" [level=2] [ref=f24e24]
+      - list [ref=f24e25]:
+        - listitem [ref=f24e26]: You keep ownership of the videos you upload and the clips made from them.
+        - listitem [ref=f24e27]: You may only process and publish content that you own or are authorised to use, and you must comply with the terms of every platform you take content from or post to, including YouTube, Twitch, Kick, Instagram and TikTok.
+        - listitem [ref=f24e28]: You grant us a limited licence to store, copy, process and transmit your content solely to provide the Service to you, including sending excerpts of transcripts to our AI provider.
+        - listitem [ref=f24e29]: You are solely responsible for your content and for anything you publish. We do not review content before it is processed or posted.
+      - heading "4. Acceptable use" [level=2] [ref=f24e30]
+      - paragraph [ref=f24e31]:
+        - text: You must follow our
+        - link "Acceptable Use Policy" [ref=f24e32] [cursor=pointer]:
+          - /url: /acceptable-use
+        - text: . We may remove content, stop processing, or suspend or close accounts that break it.
+      - heading "5. Availability, outages and changes" [level=2] [ref=f24e33]
+      - paragraph [ref=f24e34]: "The Service depends on our own systems and on third parties we do not control, including video platforms, our AI provider, hosting and network providers. We do not guarantee that the Service will be available, uninterrupted, timely or error-free. It may be unavailable or degraded at any time, for example during maintenance, outages, failures or changes at those third parties, security incidents or events beyond our reasonable control. In such cases:"
+      - list [ref=f24e35]:
+        - listitem [ref=f24e36]: recordings may stop, live moments may be missed, clips may fail, be delayed or be of lower quality, and posts may not go out;
+        - listitem [ref=f24e37]: no compensation is owed for downtime, missed or failed work, or loss of data;
+        - listitem [ref=f24e38]: we may change, suspend or discontinue features, supported platforms or the Service as a whole. If we permanently close the Service we will give reasonable notice where we can.
+      - paragraph [ref=f24e39]: Keep your own copies of anything important. We are not a backup service.
+      - heading "6. Third-party services" [level=2] [ref=f24e40]
+      - paragraph [ref=f24e41]: Connected accounts and third-party platforms are governed by their own terms and policies. We are not responsible for their availability, decisions, content removal, account actions or changes to their access rules, including any that stop features of the Service from working.
+      - heading "7. Intellectual property and copyright complaints" [level=2] [ref=f24e42]
+      - paragraph [ref=f24e43]:
+        - text: The Clipwyn software is open source and is licensed under the terms in its source repository. The content on this site belongs to us and our licensors. If you believe content processed through Clipwyn infringes your copyright, contact us at
+        - link "support@braivex.com" [ref=f24e44] [cursor=pointer]:
+          - /url: mailto:support@braivex.com
+        - text: with the details of the work, the material, and your contact information, and we will respond and act on valid notices.
+      - heading "8. Disclaimer" [level=2] [ref=f24e45]
+      - paragraph [ref=f24e46]: To the fullest extent permitted by law, the Service and all output are provided "as is" and "as available", without warranties of any kind, express or implied, including fitness for a particular purpose, merchantability, accuracy, non-infringement, views, reach, earnings or results.
+      - heading "9. Limitation of liability" [level=2] [ref=f24e47]
+      - paragraph [ref=f24e48]: To the fullest extent permitted by law, we are not liable for any indirect, incidental, special, consequential or punitive damages, or for loss of profits, income, views, followers, data, goodwill or business opportunities, however caused. The Service is provided free of charge, and our total liability for all claims relating to it is limited to the greatest extent the law allows.
+      - paragraph [ref=f24e49]: Nothing in these Terms excludes or limits liability that cannot be excluded or limited under applicable law, such as liability for death or personal injury caused by negligence, or for fraud.
+      - heading "10. Indemnity" [level=2] [ref=f24e50]
+      - paragraph [ref=f24e51]: You agree to indemnify us against claims, losses and costs (including reasonable legal fees) arising from your content, your use of the Service, or your breach of these Terms or of anyone's rights.
+      - heading "11. Suspension and termination" [level=2] [ref=f24e52]
+      - paragraph [ref=f24e53]: You may stop using the Service and ask us to delete your account at any time. We may suspend or terminate access immediately if you breach these Terms, if required by law, or to protect the Service or others. Sections that by their nature should survive termination do so.
+      - heading "12. Changes to these Terms" [level=2] [ref=f24e54]
+      - paragraph [ref=f24e55]: We may update these Terms. Material changes will be announced in the app or by email before they take effect. Continuing to use the Service after that means you accept the updated Terms.
+      - heading "13. General" [level=2] [ref=f24e56]
+      - list [ref=f24e57]:
+        - listitem [ref=f24e58]: These Terms are governed by the laws of the country where Clipwyn's operator is established, without regard to conflict-of-law rules, and disputes will be heard by the courts there, unless the law of your country of residence gives you a mandatory right to use your local courts or laws.
+        - listitem [ref=f24e59]: We are not responsible for delays or failures caused by events beyond our reasonable control.
+        - listitem [ref=f24e60]: If any part of these Terms is found unenforceable, the rest remains in effect. Not enforcing a right is not a waiver of it.
+        - listitem [ref=f24e61]: These Terms, together with the policies linked above, are the entire agreement between you and us about the Service. You may not transfer them; we may transfer them as part of a reorganisation or sale of the business.
+      - heading "14. Contact" [level=2] [ref=f24e62]
+      - paragraph [ref=f24e63]:
+        - link "support@braivex.com" [ref=f24e64] [cursor=pointer]:
+          - /url: mailto:support@braivex.com
+  - contentinfo [ref=f24e65]:
+    - generic [ref=f24e66]:
+      - generic [ref=f24e67]:
+        - generic [ref=f24e68]:
+          - link "Clipwyn by Braivex home" [ref=f24e69] [cursor=pointer]:
+            - /url: /
+            - img "Clipwyn by Braivex" [ref=f24e70]
+          - paragraph [ref=f24e71]: Clipwyn turns streams and long videos into captioned vertical clips. A product of Braivex.
+          - link "Start clipping" [ref=f24e72] [cursor=pointer]:
+            - /url: /signup
+        - generic [ref=f24e73]:
+          - heading "Product" [level=4] [ref=f24e74]
+          - list [ref=f24e75]:
+            - listitem [ref=f24e76]:
+              - link "How it works" [ref=f24e77] [cursor=pointer]:
+                - /url: /#how
+            - listitem [ref=f24e78]:
+              - link "Features" [ref=f24e79] [cursor=pointer]:
+                - /url: /#features
+            - listitem [ref=f24e80]:
+              - link "Live clipping" [ref=f24e81] [cursor=pointer]:
+                - /url: /#live
+            - listitem [ref=f24e82]:
+              - link "Open source" [ref=f24e83] [cursor=pointer]:
+                - /url: /#open
+            - listitem [ref=f24e84]:
+              - link "FAQ" [ref=f24e85] [cursor=pointer]:
+                - /url: /#faq
+        - generic [ref=f24e86]:
+          - heading "Company" [level=4] [ref=f24e87]
+          - list [ref=f24e88]:
+            - listitem [ref=f24e89]:
+              - link "support@braivex.com" [ref=f24e90] [cursor=pointer]:
+                - /url: mailto:support@braivex.com
+            - listitem [ref=f24e91]:
+              - link "Create an account" [ref=f24e92] [cursor=pointer]:
+                - /url: /signup
+            - listitem [ref=f24e93]:
+              - link "Sign in" [ref=f24e94] [cursor=pointer]:
+                - /url: /login
+        - generic [ref=f24e95]:
+          - heading "Legal" [level=4] [ref=f24e96]
+          - list [ref=f24e97]:
+            - listitem [ref=f24e98]:
+              - link "Terms of Service" [ref=f24e99] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=f24e100]:
+              - link "Privacy Policy" [ref=f24e101] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=f24e102]:
+              - link "Acceptable Use" [ref=f24e103] [cursor=pointer]:
+                - /url: /acceptable-use
+      - generic [ref=f24e104]:
+        - generic [ref=f24e105]: © 2026 Clipwyn by Braivex
+        - generic [ref=f24e106]:
+          - text: Braivex ·
+          - link "support@braivex.com" [ref=f24e107] [cursor=pointer]:
+            - /url: mailto:support@braivex.com

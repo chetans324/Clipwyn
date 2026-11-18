@@ -1,0 +1,96 @@
+- generic [active] [ref=f107e1]:
+  - generic [ref=f107e2]:
+    - complementary "Sidebar" [ref=f107e3]:
+      - img "Clipwyn by Braivex" [ref=f107e5]
+      - navigation "Admin" [ref=f107e6]:
+        - heading "Admin" [level=4] [ref=f107e7]
+        - link "Overview" [ref=f107e8] [cursor=pointer]:
+          - /url: /admin
+        - link "Access 1" [ref=f107e12] [cursor=pointer]:
+          - /url: /admin/users
+          - generic [ref=f107e15]: Access
+          - generic [ref=f107e16]: "1"
+        - link "Feedback" [ref=f107e17] [cursor=pointer]:
+          - /url: /admin/feedback
+        - link "Activity" [ref=f107e21] [cursor=pointer]:
+          - /url: /admin/activity
+      - generic [ref=f107e25]:
+        - generic [ref=f107e26]:
+          - generic [ref=f107e27]: dark
+          - text: dark@example.com
+        - link "Back to the app" [ref=f107e28] [cursor=pointer]:
+          - /url: /app
+        - button "Sign out" [ref=f107e32] [cursor=pointer]
+    - main [ref=f107e36]:
+      - generic [ref=f107e37]:
+        - generic [ref=f107e38]:
+          - heading "Access" [level=1] [ref=f107e39]
+          - paragraph [ref=f107e40]: Every account. Approve a new signup, or open one to see how much it uses the AI.
+        - button "Refresh" [ref=f107e42] [cursor=pointer]
+      - generic [ref=f107e43]:
+        - generic [ref=f107e44]:
+          - generic [ref=f107e46]:
+            - heading "Pending access requests" [level=2] [ref=f107e47]
+            - paragraph [ref=f107e48]: 1 waiting. Approving lets them sign in and emails them a link.
+          - generic [ref=f107e50]:
+            - generic [ref=f107e51]:
+              - text: pending-ui@example.com
+              - generic [ref=f107e52]: Requested 18 Nov 2026 · Now
+            - button "Approve & activate" [ref=f107e53] [cursor=pointer]
+        - generic [ref=f107e56]:
+          - searchbox "Search accounts" [ref=f107e57]
+          - generic [ref=f107e58]:
+            - button "All" [ref=f107e59] [cursor=pointer]
+            - button "Email not confirmed" [ref=f107e60] [cursor=pointer]
+            - button "Disabled" [ref=f107e61] [cursor=pointer]
+            - button "Admins" [ref=f107e62] [cursor=pointer]
+          - generic [ref=f107e63]: 3 of 3
+        - table [ref=f107e66]:
+          - rowgroup [ref=f107e67]:
+            - row [ref=f107e68]:
+              - columnheader "Account" [ref=f107e69]
+              - columnheader "Joined" [ref=f107e70]:
+                - button "Joined" [ref=f107e71] [cursor=pointer]
+              - columnheader "Last active" [ref=f107e72]:
+                - button "Last active" [ref=f107e73] [cursor=pointer]
+              - columnheader "AI calls" [ref=f107e74]:
+                - button "AI calls" [ref=f107e75] [cursor=pointer]
+              - columnheader "AI tokens" [ref=f107e76]:
+                - button "AI tokens" [ref=f107e77] [cursor=pointer]
+              - columnheader "Videos" [ref=f107e78]:
+                - button "Videos" [ref=f107e79] [cursor=pointer]
+              - columnheader "Clips" [ref=f107e80]:
+                - button "Clips" [ref=f107e81] [cursor=pointer]
+            - row [ref=f107e82] [cursor=pointer]:
+              - cell "Pending Person Disabled pending-ui@example.com" [ref=f107e83]:
+                - text: Pending Person
+                - generic [ref=f107e84]: Disabled
+                - generic [ref=f107e85]: pending-ui@example.com
+              - cell "18 Nov 2026" [ref=f107e86]
+              - cell "Never" [ref=f107e87]
+              - cell "0" [ref=f107e88]
+              - cell "0" [ref=f107e89]
+              - cell "0" [ref=f107e90]
+              - cell "0" [ref=f107e91]
+            - row [ref=f107e92] [cursor=pointer]:
+              - cell "Gate Check gate-check@example.com" [ref=f107e93]:
+                - text: Gate Check
+                - generic [ref=f107e94]: gate-check@example.com
+              - cell "18 Nov 2026" [ref=f107e95]
+              - cell "7 min ago" [ref=f107e96]
+              - cell "0" [ref=f107e97]
+              - cell "0" [ref=f107e98]
+              - cell "0" [ref=f107e99]
+              - cell "0" [ref=f107e100]
+            - row [ref=f107e101] [cursor=pointer]:
+              - cell "dark Admin dark@example.com" [ref=f107e102]:
+                - text: dark
+                - generic [ref=f107e103]: Admin
+                - generic [ref=f107e104]: dark@example.com
+              - cell "18 Nov 2026" [ref=f107e105]
+              - cell "Now" [ref=f107e106]
+              - cell "0" [ref=f107e107]
+              - cell "0" [ref=f107e108]
+              - cell "0" [ref=f107e109]
+              - cell "0" [ref=f107e110]
+  - status

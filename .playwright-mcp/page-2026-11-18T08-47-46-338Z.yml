@@ -1,0 +1,58 @@
+- generic [active] [ref=f5e1]:
+  - complementary [ref=f5e2]:
+    - link "Clipwyn by Braivex home" [ref=f5e3] [cursor=pointer]:
+      - /url: /
+      - img "Clipwyn by Braivex" [ref=f5e4]
+    - generic [ref=f5e5]:
+      - heading [level=1] [ref=f5e6]:
+        - text: Clips from every stream,
+        - emphasis [ref=f5e7]: without watching all of it.
+      - list [ref=f5e8]:
+        - listitem [ref=f5e9]:
+          - generic [ref=f5e12]: Records live streams and clips them as they happen
+        - listitem [ref=f5e13]:
+          - generic [ref=f5e16]: Vertical shorts with word-by-word captions and a hook
+        - listitem [ref=f5e17]:
+          - generic [ref=f5e20]: "Free and open source: runs on your own AI key"
+    - generic [ref=f5e21]:
+      - text: © 2026 Clipwyn ·
+      - link "Privacy" [ref=f5e22] [cursor=pointer]:
+        - /url: /privacy
+      - text: ·
+      - link "Terms" [ref=f5e23] [cursor=pointer]:
+        - /url: /terms
+  - main [ref=f5e24]:
+    - generic [ref=f5e25]:
+      - link:
+        - /url: /
+      - heading "Create your account" [level=2] [ref=f5e26]
+      - paragraph [ref=f5e27]: Start clipping in a couple of minutes.
+      - generic [ref=f5e28]:
+        - generic [ref=f5e29]:
+          - text: Your name
+          - textbox "Your name" [ref=f5e30]:
+            - /placeholder: What should we call you?
+        - generic [ref=f5e31]:
+          - text: Email
+          - textbox "Email" [ref=f5e32]:
+            - /placeholder: you@example.com
+        - generic [ref=f5e33]:
+          - generic [ref=f5e34]: Password
+          - generic [ref=f5e35]:
+            - textbox "Password Show password At least 8 characters." [ref=f5e36]:
+              - /placeholder: Choose a password
+            - button "Show password" [ref=f5e37] [cursor=pointer]
+          - generic [ref=f5e40]: At least 8 characters.
+        - button "Create account" [ref=f5e41] [cursor=pointer]
+      - paragraph [ref=f5e42]:
+        - text: By continuing you agree to our
+        - link "Terms" [ref=f5e43] [cursor=pointer]:
+          - /url: /terms
+        - text: and
+        - link "Privacy Policy" [ref=f5e44] [cursor=pointer]:
+          - /url: /privacy
+        - text: .
+      - paragraph [ref=f5e45]:
+        - text: Already have an account?
+        - link "Sign in" [ref=f5e46] [cursor=pointer]:
+          - /url: /login

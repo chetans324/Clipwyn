@@ -1,0 +1,729 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - img "Goa scene 1" [ref=e5]
+      - img "Goa scene 2"
+      - img "Goa scene 3"
+      - img "Goa scene 4"
+      - img "Goa scene 5"
+      - img "Goa scene 6"
+      - img "Goa scene 7"
+    - generic [ref=e8]:
+      - heading "Slow Live with Paras" [level=1] [ref=e9]
+      - paragraph [ref=e10]: Come live slowly with me in Goa for a weekend
+      - paragraph [ref=e11]: A 3-day Rest Residency at Swakaash Home, Anjuna, where up to six people come together to rest deeply, disconnect from the rush, and experience a slower way of living.
+      - generic [ref=e12]:
+        - generic [ref=e18]:
+          - generic [ref=e19]: November Circle
+          - generic [ref=e20]: 20–22 November
+        - generic [ref=e26]:
+          - generic [ref=e27]: December Circle
+          - generic [ref=e28]: 4–6 December
+      - generic [ref=e29]:
+        - link "Apply to join a circle" [ref=e30] [cursor=pointer]:
+          - /url: https://docs.google.com/forms/d/e/1FAIpQLScZtmrMn2cjqMui-y6AiMN77Dpnt-I-LYFvzwOHOVP2fFj8Tg/viewform?usp=header
+        - generic [ref=e36]:
+          - generic [ref=e42]:
+            - paragraph [ref=e43]: Can’t make these dates?
+            - paragraph [ref=e44]: Interested in experiencing Slow Live with Paras? Leave your details and we’ll keep you updated about upcoming circles.
+          - link "Register your interest" [ref=e45] [cursor=pointer]:
+            - /url: https://docs.google.com/forms/d/e/1FAIpQLScZtmrMn2cjqMui-y6AiMN77Dpnt-I-LYFvzwOHOVP2fFj8Tg/viewform?usp=header
+  - generic [ref=e54]:
+    - generic [ref=e55]: A little glimpse
+    - heading "A little glimpse into the kind of weekends I’ve been creating in Goa." [level=2] [ref=e56]
+    - paragraph [ref=e57]: A few moments from the people, conversations and little experiences that make these weekends what they are.
+    - list [ref=e58]:
+      - listitem [ref=e59]:
+        - generic [ref=e62]: Real people. Real moments. No staging.
+      - listitem [ref=e63]:
+        - generic [ref=e66]: Slow mornings, shared meals and unhurried evenings.
+      - listitem [ref=e67]:
+        - generic [ref=e70]: The kind of memories that stay with you.
+    - paragraph [ref=e71]:
+      - generic [ref=e76]: Watch with sound. ❤️
+    - link "Apply to join a circle" [ref=e78] [cursor=pointer]:
+      - /url: https://docs.google.com/forms/d/e/1FAIpQLScZtmrMn2cjqMui-y6AiMN77Dpnt-I-LYFvzwOHOVP2fFj8Tg/viewform?usp=header
+  - generic [ref=e83]:
+    - generic [ref=e86]: Private Note
+    - heading "A Note Before You Apply" [level=2] [ref=e91]
+    - generic [ref=e92]:
+      - paragraph [ref=e93]: This isn’t a retreat with a packed itinerary.
+      - paragraph [ref=e94]:
+        - text: This experience takes place inside one of my homes in Anjuna, Goa, and each circle is intentionally small,
+        - strong [ref=e95]: up to six people
+        - text: .
+      - paragraph [ref=e96]: "There will be some things we do together: movement, conversations, walks, meals, journaling, sunsets, and moments of reflection."
+      - paragraph [ref=e97]:
+        - text: But
+        - strong [ref=e98]: there is also a lot of space.
+      - paragraph [ref=e99]: You do not have to arrive with a goal. You do not have to make the most of every minute. You do not have to become a better version of yourself by Sunday.
+      - paragraph [ref=e100]:
+        - strong [ref=e101]: You just have to be willing to slow down.
+      - paragraph [ref=e102]:
+        - strong [ref=e103]: I personally read every application and speak with everyone before confirming their place.
+      - paragraph [ref=e104]: — Paras Pundir
+  - generic [ref=e106]:
+    - generic [ref=e107]:
+      - generic [ref=e108]: THE INTENT
+      - heading "Before I tell you what this is, let me first tell you what it isn't." [level=2] [ref=e109]
+    - img "Swakaash Sanctuary" [ref=e111]
+    - generic [ref=e112]:
+      - generic [ref=e114]:
+        - generic [ref=e115]:
+          - generic [ref=e116]: ✕
+          - heading "Not a typical wellness retreat" [level=4] [ref=e117]
+        - paragraph [ref=e118]: You won’t be waking up at 5:00 AM for a packed schedule of back-to-back spiritual activities.
+      - generic [ref=e120]:
+        - generic [ref=e121]:
+          - generic [ref=e122]: ✕
+          - heading "Not a distracting Goa trip" [level=4] [ref=e123]
+        - paragraph [ref=e124]: This isn’t a weekend for exploring cafés, hopping parties, or returning home more physically exhausted than when you left.
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - generic [ref=e128]: ✕
+          - heading "Not another self-improvement project" [level=4] [ref=e129]
+        - paragraph [ref=e130]: We won't be doing heavy trauma-release workshops or any high-pressure coaching exercises.
+    - generic [ref=e132]:
+      - generic [ref=e133]: IT IS A REST RESIDENCY
+      - heading "\"Which simply means that for three days, rest is our absolute priority for you.\"" [level=3] [ref=e134]
+      - generic [ref=e135]:
+        - paragraph [ref=e136]:
+          - text: Imagine
+          - strong [ref=e137]: 3 days off your regular life
+          - text: where you’re on a break from your daily responsibilities, that day to day routine, and the exact environment that drains you. Instead,
+          - strong [ref=e138]: you are put into an old Goan house on a hill surrounded by trees, birds, and ocean energy.
+        - paragraph [ref=e139]:
+          - strong [ref=e140]: You don’t have to decide on your meals, you have to go nowhere.
+          - text: Everything has been taken care of by me so you can just exist alongside
+          - strong [ref=e141]: a small, hand-picked group of good people
+          - text: where you can share your heart out.
+      - paragraph [ref=e142]:
+        - text: Though it starts with
+        - strong [ref=e143]: a commitment which most of us find incredibly difficult
+        - text: because
+        - strong [ref=e144]: resting is connected to guilt in our society.
+        - text: The commitment of
+        - strong [ref=e145]: intentionally taking a Friday off from work
+        - text: ", not because you have a sudden crisis or an emergency, but because"
+        - strong [ref=e146]: you are making a conscious choice to prioritize yourself.
+      - generic [ref=e147]: If your body is moving at one speed while your mind is racing at another, I have built this specifically for you.
+  - generic [ref=e153]:
+    - generic [ref=e154]:
+      - generic [ref=e155]: THE MIRROR
+      - heading "Tell me if you’re feeling this too?" [level=2] [ref=e156]
+      - paragraph [ref=e157]: Lately, it feels like we are all just consuming a massive amount of life without actually digesting any of it. We listen to podcasts on productivity, read books on mindfulness, and scroll through endless advice on how to live better. But knowledge alone doesn't change our behavior; our environment does.
+    - img "The Mirror Reflection" [ref=e159]
+    - paragraph [ref=e161]: "Reflect on these and answer to yourself honestly:"
+    - generic [ref=e162]:
+      - generic [ref=e163]:
+        - generic: "01"
+        - generic [ref=e164]:
+          - generic [ref=e165]: ON WAKING
+          - heading "When was the last time you woke up naturally without an alarm, ate your breakfast peacefully, and didn't immediately rush into your morning?" [level=3] [ref=e168]
+      - generic [ref=e169]:
+        - generic: "02"
+        - generic [ref=e170]:
+          - generic [ref=e171]: ON PRESENCE
+          - heading "When was the last time you had a full meal without a screen distraction, or went to bed without scrolling through your phone just to override the pressure to sleep?" [level=3] [ref=e174]
+      - generic [ref=e175]:
+        - generic: "03"
+        - generic [ref=e176]:
+          - generic [ref=e177]: ON LISTENING
+          - heading "When was the last time you actually took an afternoon nap when your body begged for it, instead of pushing through with a shot of caffeine or nicotine?" [level=3] [ref=e180]
+      - generic [ref=e181]:
+        - generic: "04"
+        - generic [ref=e182]:
+          - generic [ref=e183]: ON CLEANSING
+          - heading "When was the last time you felt a bit free from your own overthinking, enjoyed the experience around you, and felt genuinely, entirely rested in your mind, body, and soul?" [level=3] [ref=e186]
+    - generic [ref=e188]:
+      - paragraph [ref=e189]:
+        - text: If even one of these prompts made you pause, I just want you to know that
+        - strong [ref=e190]: you aren’t lazy or unmotivated.
+        - text: You’re just holding onto a level of exhaustion that a standard night of sleep simply cannot fix in the surroundings and conditions you are currently living in.
+      - paragraph [ref=e191]:
+        - strong [ref=e192]: Your body and your mind are craving a deep break.
+        - text: Unfortunately, we are conditioned so badly that this survival mode has become our normal now. We don’t even realize how heavy it is until we finally step into a space that allows us to drop it.
+      - generic [ref=e194]:
+        - generic [ref=e195]:
+          - paragraph [ref=e201]: “No one actually made me realize that this stress I was carrying all the time was eating away at me so badly. No amount of wellness sessions or quick fixes actually helped. You gotta take that real break for yourself to even identify this stress and remind your body about its natural free state. Paras became that reminder for me. My definition of break and rest has changed since then. Breaks are powerful.”
+          - generic [ref=e204]:
+            - img "Anmol" [ref=e205]
+            - generic [ref=e206]:
+              - heading "Anmol" [level=4] [ref=e207]
+              - paragraph [ref=e208]: Video Editor
+        - generic [ref=e209]:
+          - paragraph [ref=e215]: “My session with Paras went great. He is such a good listener and a lovely person to talk to. The way he helps you see things clearly and visualize your goals, as well as how easy he made it to achieve them, is amazing. You will definitely smile at the end of the session and feel motivated to bring these changes into your life. One of the best things about him is that his approach is very natural. Before he emphasizes the importance of slowing things down, he highlights how discussing the small little things can have a meaningful impact on your life and how confident it can make you. You are a lovely human being Paras, more power to you.”
+          - generic [ref=e218]:
+            - img "Roshini" [ref=e219]
+            - generic [ref=e220]:
+              - heading "Roshini" [level=4] [ref=e221]
+              - paragraph [ref=e222]: Art Seller
+        - generic [ref=e223]:
+          - paragraph [ref=e229]: “Paras has a remarkable gift for active listening, gently guiding me through a process of self-discovery that ultimately cleared my mind and provided me with a clear and concise perspective. What sets Paras apart is his approach; instead of simply imparting his own thoughts and solutions, he empowered me to explore and identify my own challenges. His guidance led me to uncover insights and solutions I hadn't considered before, steering me towards the right direction with wisdom and care. Thank you so much !!!”
+          - generic [ref=e232]:
+            - img "Harshil" [ref=e233]
+            - generic [ref=e234]:
+              - heading "Harshil" [level=4] [ref=e235]
+              - paragraph [ref=e236]: Software Developer
+      - generic [ref=e237]:
+        - generic [ref=e238]:
+          - generic [ref=e239]: THE PREVIEW EXPERIENCE
+          - heading "Preview Weekend" [level=2] [ref=e240]
+          - paragraph [ref=e241]: Before opening applications publicly, I hosted a small Preview Weekend to experience the rhythm of these three days, document it honestly, and make a few thoughtful improvements.
+        - generic [ref=e242]:
+          - img "Preview Weekend 1" [ref=e244]
+          - img "Preview Weekend 2" [ref=e246]
+          - img "Preview Weekend 3" [ref=e248]
+          - img "Preview Weekend 4" [ref=e250]
+          - img "Preview Weekend 5" [ref=e252]
+          - img "Preview Weekend 6" [ref=e254]
+          - img "Preview Weekend 7" [ref=e256]
+          - img "Preview Weekend 8" [ref=e258]
+          - img "Preview Weekend 9" [ref=e260]
+          - img "Preview Weekend 10" [ref=e262]
+      - generic [ref=e263]:
+        - generic [ref=e264]:
+          - generic [ref=e265]: LIFE AT SWAKAASH HOME
+          - heading "The little moments you'll remember" [level=2] [ref=e266]
+          - paragraph [ref=e267]: Interestingly, most people don't remember the activities. They remember the conversations after dinner, the silence during sunsets, the laughter while cooking, the afternoon naps, and the feeling of finally having nowhere to rush.
+        - generic [ref=e268]:
+          - button [ref=e269] [cursor=pointer]
+          - generic [ref=e272]:
+            - img "Atmosphere moment 1" [ref=e274]
+            - img "Atmosphere moment 2" [ref=e276]
+            - img "Atmosphere moment 3" [ref=e278]
+            - img "Atmosphere moment 4" [ref=e280]
+            - img "Atmosphere moment 5" [ref=e282]
+            - img "Atmosphere moment 6" [ref=e284]
+            - img "Atmosphere moment 7" [ref=e286]
+            - img "Atmosphere moment 8" [ref=e288]
+            - img "Atmosphere moment 9" [ref=e290]
+            - img "Atmosphere moment 10" [ref=e292]
+            - img "Atmosphere moment 11" [ref=e294]
+            - img "Atmosphere moment 12" [ref=e296]
+            - img "Atmosphere moment 13" [ref=e298]
+            - img "Atmosphere moment 14" [ref=e300]
+            - img "Atmosphere moment 15" [ref=e302]
+            - img "Atmosphere moment 16" [ref=e304]
+            - img "Atmosphere moment 17" [ref=e306]
+            - img "Atmosphere moment 18" [ref=e308]
+            - img "Atmosphere moment 19" [ref=e310]
+          - button [ref=e311] [cursor=pointer]
+  - generic [ref=e314]:
+    - generic [ref=e315]:
+      - generic [ref=e316]: THE ORIGIN
+      - heading "Why I Created This" [level=2] [ref=e317]
+    - generic [ref=e319]:
+      - generic [ref=e320]:
+        - paragraph [ref=e321]:
+          - text: I created this because
+          - strong [ref=e322]: I myself have learnt the real value of breaks and rest
+          - text: only when I had already
+          - strong [ref=e323]: lost a lot to burnout
+          - text: .
+        - paragraph [ref=e324]:
+          - text: I am someone who has always loved working, and I even worked on things that had a real purpose to them. But somewhere along the way,
+          - strong [ref=e325]: that purpose got completely lost in the rush
+          - text: I created for myself and the rush this society pushes on us.
+          - strong [ref=e326]: I got burnt out so bad
+          - text: that it made me question the choices I had once made against all the odds.
+        - paragraph [ref=e327]:
+          - text: I was this driven, passionate, working human who kept work as his top priority.
+          - strong [ref=e328]: Work was my way of dealing with difficult times
+          - text: and passing through heavy emotions, and after years of building that habit, it just kept piling up until one day
+          - strong [ref=e329]: it completely blasted.
+        - paragraph [ref=e330]:
+          - strong [ref=e331]: I came to Goa because I was just completely done
+          - text: with my work and this fast-paced, constantly demanding life. To be honest,
+          - strong [ref=e332]: I didn't even know what slow living was back then
+          - text: ", or how it could change someone’s outlook towards life."
+        - paragraph [ref=e333]:
+          - text: But
+          - strong [ref=e334]: this house and these surroundings subconsciously put me into a different rhythm...
+          - text: and it made me realize that my quality of life had instantly increased.
+          - strong [ref=e335]: Being so close to nature
+          - text: helped me get clear on things, and it gave my body and mind
+          - strong [ref=e336]: a much-deserved break
+          - text: only to come back stronger.
+        - paragraph [ref=e337]:
+          - text: I can see a massive shift in who I was 5 years ago versus who I am today.
+          - strong [ref=e338]: Only with a rested body and mind
+          - text: was I able to make better decisions for myself, keep myself happier than before, and find that word 'fulfillment' that I had completely lost during my last journey in Bangalore.
+      - generic [ref=e339]:
+        - generic [ref=e340]:
+          - img "Authentic Origin Moments" [ref=e341]
+          - generic [ref=e342]: SLOW EVENINGS AT HOME
+        - generic [ref=e343]:
+          - heading "200+ Humans Hosted" [level=4] [ref=e347]
+          - paragraph [ref=e348]: Over the last five years, I have unofficially hosted over 200+ humans in this house. And I can confidently say that all of them went back a bit better than they came.
+          - paragraph [ref=e349]: Many slept here like never before, some fell in love with the home-cooked food, and others got lost in the absolute simplicity of this place.
+        - generic [ref=e350]:
+          - heading "Why keep it completely intimate?" [level=5] [ref=e351]
+          - paragraph [ref=e355]: This specific residency is something I want to keep completely intimate, just like I naturally have in the past. It is simply about sitting down with a small bunch of like-minded people, sharing food, exchanging deeper life conversations, and offering you the kind of personal focus and coaching that can only happen in a safe space.
+  - generic [ref=e357]:
+    - generic [ref=e358]:
+      - generic [ref=e359]: ABOUT YOUR HOST
+      - heading "Before you spend a weekend with me, hear from the people who already have." [level=2] [ref=e360]
+      - paragraph [ref=e361]: These stories come from people who joined my Slowcations and coaching experiences. If you're wondering what kind of host I am, I'll let them answer that.
+    - generic [ref=e362]:
+      - button [ref=e363] [cursor=pointer]
+      - generic [ref=e366]:
+        - generic [ref=e367] [cursor=pointer]:
+          - button [ref=e374]
+          - generic [ref=e379]:
+            - heading "Yashvanthy Naidu" [level=4] [ref=e380]
+            - paragraph [ref=e381]: Integrative Holistic Coach
+        - generic [ref=e382] [cursor=pointer]:
+          - button [ref=e388]
+          - generic [ref=e393]:
+            - heading "Manoj" [level=4] [ref=e394]
+            - paragraph [ref=e395]: Product Manager and Content Creator
+        - generic [ref=e396] [cursor=pointer]:
+          - button [ref=e402]
+          - generic [ref=e407]:
+            - heading "Umesh Bhadwaj" [level=4] [ref=e408]
+            - paragraph [ref=e409]: DJ
+        - generic [ref=e410] [cursor=pointer]:
+          - button [ref=e416]
+          - generic [ref=e421]:
+            - heading "Nikhil" [level=4] [ref=e422]
+            - paragraph [ref=e423]: Physiotherapist
+      - button [ref=e424] [cursor=pointer]
+  - generic [ref=e427]:
+    - generic [ref=e428]:
+      - generic [ref=e429]:
+        - generic [ref=e430]: THE EVIDENCE
+        - heading "The Honest Science of a Pause" [level=2] [ref=e431]
+        - paragraph [ref=e432]: Why this weekend actually works. It is not magic, it is simply what happens to a human being when you finally change their environment and slow down their pace.
+      - generic [ref=e433]:
+        - generic [ref=e434]:
+          - generic [ref=e435]: "01"
+          - generic [ref=e440]:
+            - heading "Your body borrows my calm" [level=3] [ref=e441]
+            - paragraph [ref=e442]:
+              - text: Have you ever noticed how your stress levels spike just by sitting in a room full of anxious, frantic people?
+              - strong [ref=e443]: The opposite is also true.
+              - text: When you spend seventy-two hours in a quiet house, surrounded by nature, with an environment and a host (me) operating at an entirely unrushed pace,
+              - strong [ref=e444]: your brain and body naturally begin to mirror that peace.
+        - generic [ref=e445]:
+          - generic [ref=e446]: "02"
+          - generic [ref=e457]:
+            - heading "Giving your brain a chance to close its browser tabs" [level=3] [ref=e458]
+            - paragraph [ref=e459]:
+              - strong [ref=e460]: You aren’t a naturally negative or anxious person,
+              - text: you are just carrying
+              - strong [ref=e461]: a massive, heavy backlog of un-processed day-to-day mental noise.
+              - text: When your phone is constantly buzzing and notifications are piling up,
+              - strong [ref=e462]: your brain never gets a single second to rest or clear its own cache.
+        - generic [ref=e463]:
+          - generic [ref=e464]: "03"
+          - generic [ref=e472]:
+            - heading "Stepping out of your everyday roles" [level=3] [ref=e473]
+            - paragraph [ref=e474]:
+              - strong [ref=e475]: It is incredibly hard to change your perspective, reflect on your life, or find true rest
+              - text: when you are waking up every morning in the exact same room where your daily stress was originally created. At home,
+              - strong [ref=e476]: you are constantly bound by expectations
+              - text: and forced to play the role of the boss, the partner, the reliable friend, or the constant problem solver.
+    - link "Apply to join a circle" [ref=e478] [cursor=pointer]:
+      - /url: https://docs.google.com/forms/d/e/1FAIpQLScZtmrMn2cjqMui-y6AiMN77Dpnt-I-LYFvzwOHOVP2fFj8Tg/viewform?usp=header
+  - generic [ref=e482]:
+    - generic [ref=e483]:
+      - generic [ref=e484]: OUR APPROACH
+      - heading "Every weekend finds its own rhythm." [level=2] [ref=e485]
+      - paragraph [ref=e486]:
+        - text: You'll notice there isn't a detailed hour-by-hour itinerary on this page.
+        - strong [ref=e487]: That's intentional.
+        - text: I believe
+        - strong [ref=e488]: The best conversations, the deepest rest and the most memorable moments can't be scheduled.
+        - text: So instead of following the clock,
+        - strong [ref=e489]: we follow the energy of the group and the natural rhythm of the day.
+    - generic [ref=e490]:
+      - generic [ref=e491]:
+        - img "We Rest" [ref=e493]
+        - generic [ref=e497]:
+          - heading "We Rest" [level=3] [ref=e498]
+          - paragraph [ref=e499]:
+            - strong [ref=e500]: There are no early morning alarm clocks here.
+            - strong [ref=e501]: Your body decides its own sleeping.
+            - text: In the afternoons, we prioritize
+            - strong [ref=e502]: deep physical recovery
+            - text: —supported by sound frequencies, slow breathing, or a guided Yoga Nidra session.
+      - generic [ref=e503]:
+        - img "We Move" [ref=e505]
+        - generic [ref=e509]:
+          - heading "We Move" [level=3] [ref=e510]
+          - paragraph [ref=e511]:
+            - text: We engage in
+            - strong [ref=e512]: gentle, unhurried movements
+            - text: designed to get us
+            - strong [ref=e513]: out of our heads and back into our bodies
+            - text: . This means morning stretches, light breathwork, mindful chanting, or
+            - strong [ref=e514]: quiet walks
+            - text: down to nearby sunset spots.
+      - generic [ref=e515]:
+        - img "We Connect" [ref=e517]
+        - generic [ref=e521]:
+          - heading "We Connect" [level=3] [ref=e522]
+          - paragraph [ref=e523]:
+            - strong [ref=e524]: We live like a temporary family under one roof.
+            - text: We gather around the table for
+            - strong [ref=e525]: home-cooked
+            - text: ", highly nutritious, rich meals. We talk, listen, cook, and dive into the Swakaash card game to spark"
+            - strong [ref=e526]: deep, authentic conversations
+            - text: .
+      - generic [ref=e527]:
+        - img "We Express" [ref=e529]
+        - generic [ref=e533]:
+          - heading "We Express" [level=3] [ref=e534]
+          - paragraph [ref=e535]:
+            - text: We dedicate time to
+            - strong [ref=e536]: clear out the mental clutter
+            - text: .
+            - strong [ref=e537]: guided writing, journaling
+            - text: ", and mindful clay art sessions allow you to connect with the child inside you,"
+            - strong [ref=e538]: creating purely for joy
+            - text: .
+    - link "Apply to join a circle" [ref=e540] [cursor=pointer]:
+      - /url: https://docs.google.com/forms/d/e/1FAIpQLScZtmrMn2cjqMui-y6AiMN77Dpnt-I-LYFvzwOHOVP2fFj8Tg/viewform?usp=header
+  - generic [ref=e545]:
+    - generic [ref=e546]:
+      - generic [ref=e547]: THE INVITATION
+      - heading "A Humane Relationship with Technology" [level=2] [ref=e548]
+    - generic [ref=e550]:
+      - paragraph [ref=e551]:
+        - strong [ref=e552]: I am not going to lock your phone in a safe or implement a militant digital ban.
+        - text: However,
+        - strong [ref=e553]: I do invite you into a completely different relationship with your devices
+        - text: for these three days.
+      - generic [ref=e554]:
+        - generic [ref=e555]:
+          - heading "No House Wi-Fi" [level=4] [ref=e564]
+          - paragraph [ref=e565]:
+            - text: When you land,
+            - strong [ref=e566]: I will request you to step away from endless scrolling.
+            - text: To help you with that,
+            - strong [ref=e567]: I am going to keep the house Wi-Fi completely turned off.
+        - generic [ref=e568]:
+          - heading "Plan In Advance" [level=4] [ref=e573]
+          - paragraph [ref=e574]:
+            - text: The mobile network up on this hill is naturally slow anyway.
+            - strong [ref=e575]: Inform the important people in your life in advance
+            - text: so
+            - strong [ref=e576]: you can protect this time for yourself.
+        - generic [ref=e577]:
+          - heading "Direct Voice Calls" [level=4] [ref=e583]
+          - paragraph [ref=e584]:
+            - text: If you need to check in on a loved one,
+            - strong [ref=e585]: make a direct phone call rather than exchanging endless texts.
+            - strong [ref=e586]: Texting keeps you glued to the screen.
+      - generic [ref=e587]:
+        - paragraph [ref=e588]:
+          - strong [ref=e589]: This is an agreement you are making with me
+          - text: before you step into the house. If you truly wish to make the most of these three days, it is better to
+          - strong [ref=e590]: keep your external consumption and digital distractions as low as possible.
+        - paragraph [ref=e591]: "\"Beyond that, you’re a free bird.\""
+    - generic [ref=e592]:
+      - generic [ref=e594]:
+        - paragraph [ref=e596]: “Loved discussing Life related things and Coach helped me and gave solutions to overcome life related problems!”
+        - generic [ref=e597]:
+          - heading "Adarsh Danole" [level=4] [ref=e599]
+          - paragraph [ref=e600]: Designer
+      - generic [ref=e602]:
+        - paragraph [ref=e604]: “This was something new which I tried and realised that this is what people are looking for, someone to talk to.”
+        - generic [ref=e605]:
+          - heading "Shraddha Srivastava" [level=4] [ref=e607]
+          - paragraph [ref=e608]: Casting
+      - generic [ref=e610]:
+        - paragraph [ref=e612]: “One of the best discussions in a long time. Thanks coach!”
+        - generic [ref=e613]:
+          - heading "Aditya Kathpalia" [level=4] [ref=e615]
+          - paragraph [ref=e616]: Director
+  - generic [ref=e618]:
+    - generic [ref=e619]:
+      - generic [ref=e620]: THE SPACE
+      - heading "Where you will be staying" [level=2] [ref=e621]
+      - paragraph [ref=e622]: Swakaash Home — an old yet modern Portuguese house on the foothills of South Anjuna, Goa.
+    - generic [ref=e623]:
+      - generic [ref=e624]:
+        - img "Swakaash Home - Outside View" [ref=e625]
+        - generic: 01 / OUTSIDE
+      - generic [ref=e626]:
+        - img "Swakaash Home - Patio" [ref=e627]
+        - generic: 02 / PATIO
+      - generic [ref=e628]:
+        - img "Swakaash Home - Living Hall" [ref=e629]
+        - generic: 03 / HALL
+      - generic [ref=e630]:
+        - img "Swakaash Home - Kitchen" [ref=e631]
+        - generic: 04 / KITCHEN
+      - generic [ref=e632]:
+        - img "Swakaash Home - Room 1" [ref=e633]
+        - generic: 05 / ROOM 1
+      - generic [ref=e634]:
+        - img "Swakaash Home - Room 2" [ref=e635]
+        - generic: 06 / ROOM 2
+      - generic [ref=e636]:
+        - img "Swakaash Home - Washroom 1" [ref=e637]
+        - generic: 07 / WASHROOM 1
+      - generic [ref=e638]:
+        - img "Swakaash Home - Washroom 2" [ref=e639]
+        - generic: 08 / WASHROOM 2
+    - generic [ref=e640]:
+      - generic [ref=e641]:
+        - paragraph [ref=e642]:
+          - strong [ref=e643]: I designed Swakaash Home completely myself.
+          - strong [ref=e644]: My own house is right adjacent to this one
+          - text: ", and this entire land is for you to live in and explore."
+        - paragraph [ref=e645]:
+          - strong [ref=e646]: It sits silently on the corner of the hill
+          - text: ", providing you with enough privacy to live exactly as you should."
+          - strong [ref=e647]: This is not a commercial resort.
+          - text: It is a
+          - strong [ref=e648]: fully furnished 2 BHK home
+          - text: with a double-sharing setup
+          - strong [ref=e649]: designed entirely for comfort and intimacy.
+        - paragraph [ref=e650]:
+          - strong [ref=e651]: The house is completely submerged in nature and filled with natural light.
+          - text: The mornings and evenings here honestly feel like
+          - strong [ref=e652]: living in the middle of a jungle
+          - text: ", with the sounds of birds or peacocks roaming around in the backyard."
+      - generic [ref=e653]:
+        - paragraph [ref=e654]:
+          - strong [ref=e655]: We even have a small trail behind the house
+          - text: that takes us directly to our
+          - strong [ref=e656]: private sunset spot
+          - text: to spend our evenings peacefully.
+          - strong [ref=e657]: The water comes from an actual well
+          - text: ", the air is cleaner than ever, and I honestly couldn't think of a better corner to experience the true Goan susegad life."
+        - paragraph [ref=e658]:
+          - text: To me,
+          - strong [ref=e659]: there is something deeply spiritual about this land.
+          - text: Anjuna has historically been
+          - strong [ref=e660]: the land of hippies
+          - text: "- a culture that stood for ultimate freedom, presence, and music."
+          - strong [ref=e661]: That raw energy still exists up on this hill
+          - text: ", and you can actively feel it when you sit here."
+        - generic [ref=e662]:
+          - text: "* Note:"
+          - strong [ref=e663]: If you wish to join completely alone and secure an entire room for your private occupancy
+          - text: ", you can request that option in the application form for an adjusted rate."
+  - generic [ref=e664]:
+    - generic [ref=e665]:
+      - generic [ref=e666]: THE HEART OF THE KITCHEN
+      - heading "Meet Manish" [level=2] [ref=e667]
+    - generic [ref=e669]:
+      - generic [ref=e670]:
+        - generic [ref=e671]:
+          - img "Manish - The Heart of the Kitchen" [ref=e672]
+          - generic: THE HEART OF THE KITCHEN
+        - generic [ref=e673]:
+          - generic [ref=e674]:
+            - generic [ref=e675]: Phenomenal Cook
+            - heading "\"Ye Manish Kumar aapko ek se badh kar ek khana khilaega...\"" [level=4] [ref=e679]
+          - generic [ref=e680]:
+            - paragraph [ref=e681]: "\"Aapka bohot bohot swaagat hai humare ghar par. Ye Manish Kumar aapko ek se badh kar ek khana khilaega aur iss poore anjuna mai aapko koi problem nahi hone dega.\""
+            - paragraph [ref=e682]: — Manish
+      - generic [ref=e683]:
+        - paragraph [ref=e684]:
+          - strong [ref=e685]: I can't talk about this house without talking about Manish.
+          - text: Manish came into my life seven years ago during my corporate days in Bangalore, and
+          - strong [ref=e686]: he moved to Goa with me when I decided to leave that pace behind.
+          - text: He is originally from Bihar, but honestly, he has adopted the Goan susegad look and lifestyle much better than I have.
+        - paragraph [ref=e687]:
+          - strong [ref=e688]: I don't consider Manish a caretaker.
+          - strong [ref=e689]: He is my younger brother, an integral part of my life, and the true anchor of this home.
+        - paragraph [ref=e690]:
+          - strong [ref=e691]: Manish is a phenomenal cook.
+          - text: My friends frequently visit the house
+          - strong [ref=e692]: to eat his food even when I am not at home.
+          - text: He knows this locality inside out, and
+          - strong [ref=e693]: he is one of the most soft-spoken, genuinely helpful human beings you will ever come across.
+          - strong [ref=e694]: He is the person who will be ensuring you are deeply looked after
+          - text: for all three days.
+        - generic [ref=e695]:
+          - generic [ref=e702]:
+            - heading "Rich Wholesome Meals" [level=5] [ref=e703]
+            - paragraph [ref=e704]: Fresh fruits, comforting curries, smoothies, proteins, and veggies.
+          - generic [ref=e708]:
+            - heading "Deep Personal Care" [level=5] [ref=e709]
+            - paragraph [ref=e710]: Making sure you have zero worries or responsibilities for 3 days.
+  - generic [ref=e712]:
+    - generic [ref=e713]:
+      - generic [ref=e714]: THE HOST
+      - heading "Meet Your Host" [level=2] [ref=e715]
+      - paragraph [ref=e716]: For three days, I'm not just your facilitator. I'm simply another human living slowly alongside you.
+    - generic [ref=e718]:
+      - generic [ref=e719]:
+        - img "Paras Pundir" [ref=e721]
+        - generic [ref=e723]:
+          - generic [ref=e724]:
+            - heading "Paras Pundir" [level=3] [ref=e725]
+            - paragraph [ref=e726]: Founder, Swakaash
+          - paragraph [ref=e727]:
+            - text: I am a
+            - strong [ref=e728]: Community Builder. Personal Growth Coach. Founder of Swakaash.
+            - text: Over the years, I have worked with thousands of people globally, received recognition as a Global Community Professional of the Year, spoken on stages like TEDx, and worked with companies like Microsoft.
+          - generic [ref=e729]:
+            - link "Follow my days on Instagram" [ref=e730] [cursor=pointer]:
+              - /url: https://www.instagram.com/iamparaspundir
+            - link "Connect with me on LinkedIn" [ref=e735] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/iamparaspundir/
+      - generic [ref=e740]:
+        - heading [level=4] [ref=e741]:
+          - strong [ref=e744]: Learnt the hard way.
+        - generic [ref=e745]:
+          - paragraph [ref=e746]:
+            - text: This residency
+            - strong [ref=e747]: isn't a program I designed from a textbook.
+            - text: It is
+            - strong [ref=e748]: a reflection of the exact lifestyle, rhythms, and practices that restored my own clarity and health
+            - text: after
+            - strong [ref=e749]: my own burnout
+            - text: when I had to
+            - strong [ref=e750]: relearn how to breathe
+            - text: .
+            - strong [ref=e751]: I know how rare it is to find a space where you are fully accepted, completely taken care of, and given the absolute freedom to just be.
+          - paragraph [ref=e752]:
+            - strong [ref=e753]: I know that entering someone’s personal home for a weekend requires a lot of trust
+            - text: ", especially if we haven't crossed paths before."
+        - generic [ref=e754]:
+          - generic [ref=e755]:
+            - heading [level=5] [ref=e756]:
+              - strong [ref=e759]: Let's talk before you apply.
+            - paragraph [ref=e760]:
+              - text: If you are sitting there feeling deeply exhausted but still hesitant,
+              - strong [ref=e761]: just send me a message anywhere.
+          - link "Message Paras" [ref=e762] [cursor=pointer]:
+            - /url: https://wa.me/919785753016
+  - generic [ref=e763]:
+    - generic [ref=e764]:
+      - generic [ref=e765]: THE FIT
+      - heading "Is This Residency For You?" [level=2] [ref=e766]
+    - generic [ref=e768]:
+      - generic [ref=e769]:
+        - heading "This is likely for you if:" [level=3] [ref=e774]
+        - list [ref=e775]:
+          - listitem [ref=e776]:
+            - generic [ref=e778]: You are experiencing profound mental fatigue or professional burnout.
+          - listitem [ref=e779]:
+            - generic [ref=e781]: You are navigating a major life transition and need a quiet space to find clarity.
+          - listitem [ref=e782]:
+            - generic [ref=e784]: You crave deep, meaningful conversations with open-minded, curated humans.
+          - listitem [ref=e785]:
+            - generic [ref=e787]: You want to reconnect with nature, long walks, and simple physical rhythms.
+          - listitem [ref=e788]:
+            - generic [ref=e790]: You are ready to briefly unplug from the digital world to recharge your internal one.
+          - listitem [ref=e791]:
+            - generic [ref=e793]: You simply want to rest deeply.
+          - listitem [ref=e794]:
+            - generic [ref=e796]: You are already on a slow life journey but need good company or fresh inspiration to keep going.
+      - generic [ref=e797]:
+        - heading "This is NOT for you if:" [level=3] [ref=e803]
+        - list [ref=e804]:
+          - listitem [ref=e805]:
+            - generic [ref=e807]: You are looking for a commercial tourist holiday or a typical Goan nightlife experience.
+          - listitem [ref=e808]:
+            - generic [ref=e810]: You need every single hour of your day meticulously planned out with tourist activities.
+          - listitem [ref=e811]:
+            - generic [ref=e813]: You cannot comfortably step away from work notifications or constant internet use for a weekend.
+          - listitem [ref=e814]:
+            - generic [ref=e816]: You are looking for a clinical therapy intensive rather than a spacious, lifestyle-led rest environment.
+          - listitem [ref=e817]:
+            - generic [ref=e819]: You can't respect someone's personal values, since you are going to be living like a family in someone's private home.
+          - listitem [ref=e820]:
+            - generic [ref=e822]: You don't really connect with nature or being outdoors.
+          - listitem [ref=e823]:
+            - generic [ref=e825]: You find it difficult to adjust or share a communal space with others.
+    - link "Apply to join a circle" [ref=e827] [cursor=pointer]:
+      - /url: https://docs.google.com/forms/d/e/1FAIpQLScZtmrMn2cjqMui-y6AiMN77Dpnt-I-LYFvzwOHOVP2fFj8Tg/viewform?usp=header
+  - generic [ref=e831]:
+    - generic [ref=e832]:
+      - generic [ref=e833]: SEPTEMBER CIRCLE · ALREADY GATHERED
+      - heading "September already slowed down together" [level=2] [ref=e834]
+      - paragraph [ref=e835]: The first circle has already taken place at Swakaash Home. These are a few honest glimpses from those three days.
+    - generic [ref=e836]:
+      - button [ref=e837] [cursor=pointer]
+      - generic [ref=e840]:
+        - img "September Circle 1" [ref=e842]
+        - img "September Circle 2" [ref=e844]
+        - img "September Circle 3" [ref=e846]
+        - img "September Circle 4" [ref=e848]
+        - img "September Circle 5" [ref=e850]
+        - img "September Circle 6" [ref=e852]
+        - img "September Circle 7" [ref=e854]
+        - img "September Circle 8" [ref=e856]
+        - img "September Circle 9" [ref=e858]
+        - img "September Circle 10" [ref=e860]
+      - button [ref=e861] [cursor=pointer]
+  - generic [ref=e865]:
+    - generic [ref=e866]:
+      - generic [ref=e867]: THE HONEST MATH
+      - heading "Investment" [level=2] [ref=e868]
+      - paragraph [ref=e869]: You know I can’t run an experience like this without the fuel. To keep this experience completely sustainable for me while making sure you get the absolute highest quality.
+    - generic [ref=e870]: SNEAK PEEK
+    - generic [ref=e872]:
+      - generic [ref=e874]:
+        - heading "What's included:" [level=3] [ref=e875]
+        - list [ref=e876]:
+          - listitem [ref=e877]:
+            - generic [ref=e880]:
+              - text: Accommodation at Swakaash Home for 3 days and 2 nights in a shared room (
+              - strong [ref=e881]: double occupancy
+              - text: ).
+          - listitem [ref=e882]:
+            - generic [ref=e885]: Home-cooked meals, snacks, and beverages.
+          - listitem [ref=e886]:
+            - generic [ref=e889]: Guided experiences and practices.
+          - listitem [ref=e890]:
+            - generic [ref=e893]: Journaling and creative materials.
+          - listitem [ref=e894]:
+            - generic [ref=e897]: Personal coaching and group conversations with Paras.
+          - listitem [ref=e898]:
+            - generic [ref=e901]: Everything we use throughout the weekend.
+      - generic [ref=e902]:
+        - generic [ref=e903]:
+          - generic [ref=e904]: 20–22 November
+          - generic [ref=e905]: November Circle
+          - generic [ref=e906]:
+            - generic [ref=e907]: ₹12,500
+            - generic [ref=e908]: per person
+          - generic [ref=e909]: All-inclusive · Double occupancy
+        - generic [ref=e915]:
+          - generic [ref=e916]: 4–6 December
+          - generic [ref=e917]: December Circle
+          - generic [ref=e918]:
+            - generic [ref=e919]: ₹15,000
+            - generic [ref=e920]: per person
+          - generic [ref=e921]: All-inclusive · Double occupancy
+    - generic [ref=e934]:
+      - heading "My Handshake Promise" [level=4] [ref=e935]
+      - paragraph [ref=e936]: Each circle is limited to up to six people. So you can understand that I really can't scale this or make a fortune out of it. I just want to create a real shift for the people who trust me enough to join me.
+      - paragraph [ref=e937]: If you commit to this weekend, take that Friday off, put your phone away, and dive into the rhythm of the house with me. But, if by Sunday afternoon you honestly feel like the space, the food, or my coach company didn't give you the deep rest you needed, come talk to me. We will figure it out, and I will return your money. I value our relationship and your peace of mind far more than anything else.
+    - link "Apply to join a circle" [ref=e939] [cursor=pointer]:
+      - /url: https://docs.google.com/forms/d/e/1FAIpQLScZtmrMn2cjqMui-y6AiMN77Dpnt-I-LYFvzwOHOVP2fFj8Tg/viewform?usp=header
+  - generic [ref=e944]:
+    - img "Paras Pundir - A Final Letter" [ref=e946]
+    - generic [ref=e947]:
+      - generic [ref=e948]:
+        - generic [ref=e949]: A FINAL LETTER FROM ME
+        - generic [ref=e954]:
+          - paragraph [ref=e955]:
+            - strong [ref=e956]: If you have read all the way to the end of this page, there is a very high probability that something here is speaking directly to where you are in your life right now.
+          - paragraph [ref=e957]:
+            - strong [ref=e958]: Maybe you’re tired of the rush.
+            - text: Maybe you’re searching for a specific answer, or
+            - strong [ref=e959]: maybe you just need a few days where nobody expects anything from you.
+          - paragraph [ref=e960]:
+            - text: "\""
+            - strong [ref=e961]: Whatever it is that you are seeking,
+            - text: I want you to know that
+            - strong [ref=e962]: you don't have to figure it all out today.
+            - strong [ref=e963]: Sometimes, the most productive thing you can possibly do for your future self is to stop, sit down, and rest.
+            - text: "\""
+          - paragraph [ref=e964]:
+            - strong [ref=e965]: I would be incredibly honored to welcome you into my home and share a slow weekend together.
+      - generic [ref=e966]:
+        - generic [ref=e967]:
+          - paragraph [ref=e968]: Warmly,
+          - paragraph [ref=e969]: Paras Pundir
+        - generic [ref=e970]: Anjuna, Goa

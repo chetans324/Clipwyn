@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in to Clipwyn by Braivex</title>
+<meta name="description" content="Sign in or create your Clipwyn account.">
+<link rel="icon" type="image/svg+xml" href="/brand/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--focus:#00F0FF;--brand:#00F0FF;--brand-hi:#4CF6FF;--ink:#F4F6F8;--on-brand:#070606;--soft:rgba(0,240,255,.12);--line-b:rgba(0,240,255,.42);--deep:#7DE9F5;
+  --frame:#070606;--frame-2:#0E1018;--frame-text:#F4F6F8;--frame-dim:#A9AFBC;
+  --muted:rgba(255,255,255,.05);--line:rgba(255,255,255,.08);--line-2:rgba(255,255,255,.14);--text:#F4F6F8;--dim:#A9AFBC;--faint:#8B92A0;--bad:#FF6B6B;--bad-soft:rgba(255,107,107,.12);
+  --card:rgba(18,20,28,.75);--card-solid:#12141C;
+  --r-lg:8px;--r:6px;--r-sm:4px;color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--frame);color:var(--text);font:16px/1.55 "Assistant","Segoe UI",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p{margin:0}
+a{color:inherit}
+svg{width:18px;height:18px;flex:none;fill:currentColor}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 20px;border-radius:var(--r);border:1px solid var(--line-2);background:rgba(255,255,255,.04);color:var(--text);
+  font:inherit;font-weight:600;font-size:15px;cursor:pointer;text-decoration:none;white-space:nowrap;transition:background-color .15s ease,border-color .15s ease,color .15s ease}
+.btn:hover{background:var(--muted);border-color:rgba(255,255,255,.26)}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.btn.primary:hover{background:var(--brand-hi);border-color:var(--brand-hi)}
+.btn.dark{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16);color:var(--ink)}.btn.dark:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.24)}
+.btn.sm{height:38px;padding:0 14px;font-size:14px}
+.btn.lg{height:52px;padding:0 26px;font-size:16px}
+.btn:disabled{opacity:.5;cursor:default}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+body{min-height:100vh;min-height:100dvh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);background-color:var(--frame);
+  background-image:radial-gradient(ellipse 60% 60% at 78% 18%,rgba(0,240,255,.14),transparent 70%),radial-gradient(ellipse 55% 55% at 62% 92%,rgba(124,58,237,.16),transparent 72%),radial-gradient(ellipse 40% 40% at 100% 60%,rgba(0,85,255,.1),transparent 70%);background-repeat:no-repeat;background-attachment:fixed}
+.side{color:var(--frame-text);padding:40px 48px;display:flex;flex-direction:column;justify-content:space-between;min-height:100vh;min-height:100dvh}
+.side img{height:38px}
+.side h1{font-size:clamp(30px,3.2vw,42px);line-height:1.1;letter-spacing:-.03em;font-weight:700;color:#fff;max-width:440px}
+.side h1 em{font-style:normal;color:var(--brand)}
+.side ul{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-direction:column;gap:14px;color:var(--frame-dim);font-size:16px}
+.side li{display:flex;gap:12px;align-items:flex-start}.side li svg{color:var(--brand);margin-top:3px}
+.side small{color:var(--frame-dim);font-size:13px}
+.main{background:transparent;display:grid;place-items:center;padding:32px 20px}
+.card{width:100%;max-width:420px;padding:34px 32px;border-radius:var(--r-lg);background:var(--card);border:1px solid var(--line);
+  -webkit-backdrop-filter:blur(22px);backdrop-filter:blur(22px);box-shadow:0 40px 80px -50px rgba(0,0,0,.95)}
+.card h2{font-size:28px;font-weight:700;letter-spacing:-.03em;color:var(--ink);font-variant-ligatures:none}
+.card>p{color:var(--dim);margin:8px 0 26px}
+.badge{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--deep);background:rgba(0,240,255,.08);border:1px solid rgba(0,240,255,.22);border-radius:var(--r);padding:6px 10px;margin-bottom:18px}
+.badge::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--good)}
+.pend{margin-top:10px;padding:14px 16px;border-radius:var(--r);background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.24);color:var(--dim);font-size:14px;line-height:1.6}
+.pend a{color:var(--deep);font-weight:600;text-decoration:none}.pend a:hover{text-decoration:underline}
+form{display:flex;flex-direction:column;gap:16px}
+label{display:flex;flex-direction:column;gap:7px;font-size:13px;font-weight:600;color:var(--dim)}
+input{height:46px;padding:0 14px;border-radius:var(--r-sm);border:1px solid var(--line-2);background:rgba(255,255,255,.06);font:inherit;font-size:16px;color:var(--text);outline:none;transition:border-color .15s ease,background-color .15s ease}
+input:hover{border-color:rgba(255,255,255,.26)}input:focus{border-color:var(--focus);background:rgba(255,255,255,.09)}
+input:focus-visible{outline:none}
+input::placeholder{color:var(--faint)}
+.btn{width:100%;height:48px}
+.or{display:flex;align-items:center;gap:14px;color:var(--faint);font-size:13px;margin:20px 0}
+.or::before,.or::after{content:"";flex:1;height:1px;background:var(--line)}
+.err{display:none;background:var(--bad-soft);color:var(--bad);padding:11px 14px;border-radius:var(--r);font-size:14px;font-weight:500}
+.err.on{display:block}
+input[aria-invalid=true]{border-color:var(--bad);background:rgba(255,107,107,.08)}
+.swap{margin-top:22px;text-align:center;color:var(--dim);font-size:15px}
+.swap a{color:var(--deep);font-weight:600;text-decoration:none}.swap a:hover{text-decoration:underline}
+.hint{font-size:13px;color:var(--faint);font-weight:400}
+.pwrow{display:flex;justify-content:space-between;align-items:baseline}
+.pwbox{position:relative;display:block}
+.pwbox input{width:100%;padding-right:48px}
+.pwbox button{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:44px;height:44px;border:0;border-radius:4px;background:transparent;color:var(--faint);display:grid;place-items:center;cursor:pointer;transition:color .15s ease,background-color .15s ease}
+.pwbox button:hover{color:var(--text);background:var(--muted)}
+.pwbox button svg{width:18px;height:18px;fill:currentColor}
+.pwbox button[aria-pressed=true]{color:var(--deep)}
+.pwrow a{font-size:13px;font-weight:600;color:var(--deep);text-decoration:none}.pwrow a:hover{text-decoration:underline}
+.legal{margin-top:14px;font-size:12px;color:var(--faint);text-align:center;line-height:1.5}
+.legal a{color:var(--dim)}
+.g{width:20px;height:20px}
+.mobile-logo{display:none}
+@media (max-width:860px){body{grid-template-columns:1fr;background-color:var(--frame);background-image:radial-gradient(ellipse 90% 55% at 50% 8%,rgba(0,240,255,.16),transparent 70%),radial-gradient(ellipse 80% 50% at 50% 100%,rgba(124,58,237,.18),transparent 72%)}.side{display:none}.main{margin:0;border-radius:0;min-height:100vh;min-height:100dvh;align-content:center}.mobile-logo{display:block;height:34px;margin-bottom:28px}.card>a,.side>a{display:inline-flex;align-items:center;min-height:44px}.pwrow a{display:inline-flex;align-items:center;min-height:44px}}
+</style>
+</head>
+<body>
+<aside class="side">
+  <a href="/" aria-label="Clipwyn by Braivex home"><img src="/brand/logo-light.svg" alt="Clipwyn by Braivex"></a>
+  <div>
+    <h1>Clips from every stream, <em>without watching all of it.</em></h1>
+    <ul>
+      <li><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>Records live streams and clips them as they happen</span></li>
+      <li><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>Vertical shorts with word-by-word captions and a hook</span></li>
+      <li><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span>Private studio: approved members only, no keys to manage</span></li>
+    </ul>
+  </div>
+  <small>© <span id="year"></span> Clipwyn by Braivex · <a href="/privacy" style="color:inherit">Privacy</a> · <a href="/terms" style="color:inherit">Terms</a></small>
+</aside>
+<main class="main"><div class="card">
+  <a href="/"><img class="mobile-logo" src="/brand/logo-light.svg" alt="Clipwyn by Braivex"></a>
+  <p class="badge">Private studio · invite only</p>
+  <h2 id="h"></h2><p id="p"></p>
+  <div class="pend" id="pend" hidden role="status">
+    <p>Need it sooner? Email <a href="mailto:support@braivex.com">support@braivex.com</a> for priority activation.</p>
+  </div>
+  <a class="btn" id="google" href="/auth/google/start" hidden>
+    <svg class="g" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.2C12.4 13.7 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.6 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.2 5.5-4.7 7.2l7.6 5.9c4.4-4.1 7-10.1 7-17.6z"/><path fill="#FBBC05" d="M10.5 28.6A14.5 14.5 0 0 1 9.7 24c0-1.6.3-3.2.8-4.6l-7.9-6.2A24 24 0 0 0 0 24c0 3.9.9 7.5 2.6 10.8l7.9-6.2z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.6-5.9c-2.1 1.4-4.9 2.3-8.3 2.3-6.3 0-11.6-4.2-13.5-9.9l-7.9 6.2C6.5 42.6 14.6 48 24 48z"/></svg>
+    <span id="gtext"></span></a>
+  <div class="or" id="or" hidden>or use your email</div>
+  <form id="f" novalidate>
+    <div class="err" id="err" role="alert"></div>
+    <label id="namebox">Your name<input id="name" autocomplete="name" placeholder="What should we call you?" maxlength="80"></label>
+    <label>Email<input id="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+    <label><span class="pwrow">Password<a href="/reset" id="forgot">Forgot password?</a></span><span class="pwbox"><input id="password" type="password" required minlength="8" placeholder="Your password"><button type="button" id="pwshow" aria-label="Show password" aria-pressed="false"><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.47,133.47,0,0,1,25,128,133.33,133.33,0,0,1,48.07,97.25C70.33,75.19,97.22,64,128,64s57.67,11.19,79.93,33.25A133.46,133.46,0,0,1,231.05,128C223.84,141.46,192.43,192,128,192Zm0-112a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"/></svg></button></span><span class="hint" id="pwhint">At least 8 characters.</span></label>
+    <button class="btn primary" id="go"></button>
+  </form>
+  <p class="legal" id="legal">By continuing you agree to our <a href="/terms">Terms</a> and <a href="/privacy">Privacy Policy</a>.</p>
+  <p class="swap" id="swap"></p>
+</div></main>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+const $ = id => document.getElementById(id), up = location.pathname === "/signup";
+const next = new URLSearchParams(location.search).get("next");
+const dest = next && /^\/(?![\/\\])[^\\\t\r\n]*$/.test(next) ? next : "/app";
+document.title = up ? "Create your Clipwyn account" : "Sign in to Clipwyn";
+$("h").textContent = up ? "Request studio access" : "Welcome back";
+$("p").textContent = up ? "Tell us who you are. A Braivex admin approves every account before it can run." : "Sign in to get back to your clips.";
+$("go").textContent = up ? "Request access" : "Sign in";
+$("gtext").textContent = up ? "Sign up with Google" : "Sign in with Google";
+$("namebox").hidden = !up; $("pwhint").hidden = !up; $("forgot").hidden = up;
+$("password").autocomplete = up ? "new-password" : "current-password";
+$("password").placeholder = up ? "Choose a password" : "Your password";
+$("pwshow").addEventListener("click", () => {
+  const p = $("password"), on = p.type === "password";
+  p.type = on ? "text" : "password";
+  $("pwshow").setAttribute("aria-pressed", String(on));
+  $("pwshow").setAttribute("aria-label", on ? "Hide password" : "Show password");
+  p.focus();
+});
+$("swap").innerHTML = up ? 'Already have an account? <a href="/login">Sign in</a>' : 'New to Clipwyn? <a href="/signup">Create an account</a>';
+$("google").href = "/auth/google/start?next=" + encodeURIComponent(dest);
+const fail = (m, id) => {
+  const err = $("err"); err.textContent = m; err.classList.add("on");
+  const f = id && $(id);
+  if (f) { f.setAttribute("aria-invalid", "true"); f.setAttribute("aria-describedby", "err"); f.focus(); }
+};
+const clearErr = () => {
+  $("err").classList.remove("on");
+  ["email", "password", "name"].forEach(id => { const el = $(id); if (el) { el.removeAttribute("aria-invalid"); el.removeAttribute("aria-describedby"); } });
+};
+if (new URLSearchParams(location.search).get("error") === "google") fail("Google sign-in didn't finish. Try again, or use your email.");
+if (new URLSearchParams(location.search).get("pending") === "1") fail("Your access request is currently under review. Contact support@braivex.com for priority activation.");
+fetch("/api/public").then(r => r.json()).then(p => {
+  if (p.google) { $("google").hidden = false; $("or").hidden = false; }
+}).catch(() => {});
+$("f").addEventListener("submit", async e => {
+  e.preventDefault(); clearErr();
+  const email = $("email").value.trim(), password = $("password").value;
+  if (!email) return fail("Enter your email and password.", "email");
+  if (!password) return fail("Enter your email and password.", "password");
+  $("go").disabled = true;
+  try {
+    const r = await fetch(up ? "/api/auth/signup" : "/api/auth/login", {method:"POST", headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({email, password, name:$("name").value.trim()})});
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(typeof d.detail === "string" ? d.detail : "Something went wrong. Try again.");
+    if (d.pending) {   // signed up fine, but an admin has to let them in: no session yet
+      $("h").textContent = "Access request submitted";
+      $("p").textContent = "Your account is pending review by the Braivex team. You will receive an automated email notification once approved.";
+      $("f").style.display = "none"; $("or").style.display = "none";
+      $("google").hidden = true; $("swap").hidden = true; $("legal").hidden = true;
+      $("pend").hidden = false; $("go").disabled = false;
+      return;
+    }
+    location.href = dest;
+  } catch (err) { fail(err.message); $("go").disabled = false; }
+});
+</script>
+</body>
+</html>

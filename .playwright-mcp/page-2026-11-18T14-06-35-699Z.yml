@@ -1,0 +1,26 @@
+- generic [active] [ref=f106e1]:
+  - generic [ref=f106e2]:
+    - complementary "Sidebar" [ref=f106e3]:
+      - img "Clipwyn by Braivex" [ref=f106e5]
+      - navigation "Admin" [ref=f106e6]:
+        - heading "Admin" [level=4] [ref=f106e7]
+        - link "Overview" [ref=f106e8] [cursor=pointer]:
+          - /url: /admin
+        - link "Access" [ref=f106e12] [cursor=pointer]:
+          - /url: /admin/users
+        - link "Feedback" [ref=f106e16] [cursor=pointer]:
+          - /url: /admin/feedback
+        - link "Activity" [ref=f106e20] [cursor=pointer]:
+          - /url: /admin/activity
+      - generic [ref=f106e24]:
+        - link "Back to the app" [ref=f106e25] [cursor=pointer]:
+          - /url: /app
+        - button "Sign out" [ref=f106e29] [cursor=pointer]
+    - main [ref=f106e33]:
+      - generic [ref=f106e34]:
+        - generic [ref=f106e35]:
+          - heading "Overview" [level=1] [ref=f106e36]
+          - paragraph [ref=f106e37]: Sign-ups, videos and AI use across this Clipwyn server.
+        - button "Refresh" [ref=f106e39] [cursor=pointer]
+      - generic [ref=f106e40]: Loading…
+  - status

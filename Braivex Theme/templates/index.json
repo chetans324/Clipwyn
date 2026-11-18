@@ -1,0 +1,686 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "braivex-neural-hero",
+      "settings": {
+        "eyebrow": "Agentic AI Platform",
+        "heading": "Agentic AI applications that make your business move faster",
+        "heading_accent": "faster",
+        "subheading": "Deliberate partnerships, measurable outcomes. \nPurposeful agents deployed into banking, healthcare, retail, telecom and HR, and proven against your numbers, not a demo script.",
+        "button_1_label": "Get a Demo",
+        "button_1_link": "/pages/contact",
+        "button_2_label": "See How It Works",
+        "button_2_link": "#solutions",
+        "node_count": 1800,
+        "enable_animation": true,
+        "enable_scroll_morph": true,
+        "show_fps": false,
+        "enable_walker": true,
+        "mascot_scale": 0.8,
+        "mascot_color": "#ff3ec9",
+        "color_background": "#000000",
+        "color_node": "#00f0ff",
+        "color_edge": "#00a8ff",
+        "color_pulse": "#a8f6ff"
+      }
+    },
+    "routes": {
+      "type": "braivex-routes",
+      "blocks": {
+        "route-1": {
+          "type": "route",
+          "settings": {
+            "kicker": "Ready to deploy",
+            "title": "Pre-built Solutions",
+            "desc": "Banking, healthcare, retail and HR applications, live from day one.",
+            "link_label": "Learn more",
+            "link": "/pages/contact"
+          }
+        },
+        "route-2": {
+          "type": "route",
+          "settings": {
+            "kicker": "Fast-track build",
+            "title": "App Accelerators",
+            "desc": "A marketplace of pre-built agents and workflow templates to scale on.",
+            "link_label": "Learn more",
+            "link": "/pages/contact"
+          }
+        },
+        "route-3": {
+          "type": "route",
+          "settings": {
+            "kicker": "Custom engineering",
+            "title": "Tailored Apps",
+            "desc": "Applications engineered precisely to your enterprise's complexity.",
+            "link_label": "Learn more",
+            "link": "/pages/contact"
+          }
+        }
+      },
+      "block_order": [
+        "route-1",
+        "route-2",
+        "route-3"
+      ],
+      "settings": {
+        "anchor": "solutions",
+        "eyebrow": "Three ways in",
+        "heading": "Three ways to put agents to work.",
+        "lede": "Deploy what is already built, accelerate on what is half-built, or engineer what nobody else has."
+      }
+    },
+    "partners": {
+      "type": "braivex-partners",
+      "blocks": {
+        "logo-1": {
+          "type": "logo",
+          "settings": {
+            "name": "Tish Lyon",
+            "link": "https://tishlyon.com/",
+            "logo_asset": "brand-tish-lyon.png",
+            "logo_url": "",
+            "logo_scale": 1
+          }
+        },
+        "logo-2": {
+          "type": "logo",
+          "settings": {
+            "name": "Moksha Botanicals",
+            "link": "https://mokshabotanicals.in/",
+            "logo_asset": "brand-moksha-botanicals.png",
+            "logo_url": "",
+            "logo_scale": 1.5
+          }
+        },
+        "logo-3": {
+          "type": "logo",
+          "settings": {
+            "name": "Wholesale Body Jewellery",
+            "link": "https://wholesalebodyjewellery.com/",
+            "logo_asset": "brand-wholesale-body-jewellery.png",
+            "logo_url": "",
+            "logo_scale": 1.4
+          }
+        },
+        "logo-4": {
+          "type": "logo",
+          "settings": {
+            "name": "Swakaash",
+            "link": "https://www.swakaash.com/",
+            "logo_asset": "brand-swakaash.png",
+            "logo_url": "",
+            "logo_scale": 0.9
+          }
+        }
+      },
+      "block_order": [
+        "logo-1",
+        "logo-2",
+        "logo-3",
+        "logo-4"
+      ],
+      "settings": {
+        "anchor": "brands",
+        "eyebrow": "Our commitment",
+        "heading": "We build for brands that refuse to be ordinary.",
+        "body_1": "Every partner receives our complete, focused expertise. We are selective because real innovation demands total alignment.",
+        "body_2": "Braivex works with leaders across health, luxury retail and global enterprise to deliver AI that is not a tool but a competitive moat.",
+        "cta_1_label": "Start a Partnership",
+        "cta_1_link": "/pages/contact",
+        "cta_2_label": "View Case Studies",
+        "cta_2_link": "/#insights",
+        "marquee_label": "Client ecosystem",
+        "logo_height": 72
+      }
+    },
+    "industries": {
+      "type": "braivex-industries",
+      "blocks": {
+        "industry-1": {
+          "type": "industry",
+          "settings": {
+            "title": "Banking & Finance",
+            "desc": "Regulation-aware AI that coordinates self-service and live support on audit-ready shared context."
+          }
+        },
+        "industry-2": {
+          "type": "industry",
+          "settings": {
+            "title": "Healthcare",
+            "desc": "24/7 HIPAA-compliant patient care with intelligent triage and less load on clinical staff."
+          }
+        },
+        "industry-3": {
+          "type": "industry",
+          "settings": {
+            "title": "Retail & Consumer",
+            "desc": "Personalised discovery and frictionless support that convert and retain."
+          }
+        },
+        "industry-4": {
+          "type": "industry",
+          "settings": {
+            "title": "Telecom & Media",
+            "desc": "High-volume interactions handled and resolved without losing human empathy."
+          }
+        },
+        "industry-5": {
+          "type": "industry",
+          "settings": {
+            "title": "Enterprise Operations",
+            "desc": "Repetitive internal workflows automated so teams can hold the high-leverage work."
+          }
+        },
+        "industry-6": {
+          "type": "industry",
+          "settings": {
+            "title": "IT Managed Services",
+            "desc": "Incidents resolved faster by agents that understand your stack and escalate with precision."
+          }
+        },
+        "industry-7": {
+          "type": "industry",
+          "settings": {
+            "title": "HR & People Ops",
+            "desc": "Policy lookups and onboarding automated to end people-team fatigue."
+          }
+        },
+        "industry-8": {
+          "type": "industry",
+          "settings": {
+            "title": "Talent Acquisition",
+            "desc": "Pipelines accelerated by agents that screen and engage top-tier talent."
+          }
+        }
+      },
+      "block_order": [
+        "industry-1",
+        "industry-2",
+        "industry-3",
+        "industry-4",
+        "industry-5",
+        "industry-6",
+        "industry-7",
+        "industry-8"
+      ],
+      "settings": {
+        "anchor": "industries",
+        "eyebrow": "Sectors and verticals",
+        "heading": "The architecture of industry intelligence.",
+        "lede": "Agentic applications engineered for the compliance requirements, workflow complexity and customer expectations of each vertical."
+      }
+    },
+    "catalogue": {
+      "type": "braivex-catalogue",
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "group": "prebuilt",
+            "kicker": "Enterprise bundle",
+            "title": "Supply Chain Intelligence",
+            "desc": "Global logistics streamlined with predictive neural routing.",
+            "meta": "",
+            "link_label": "View module",
+            "link": "/pages/contact"
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "group": "prebuilt",
+            "kicker": "Enterprise bundle",
+            "title": "Autonomous Customer Ops",
+            "desc": "End-to-end customer resolution without human intervention.",
+            "meta": "",
+            "link_label": "View module",
+            "link": "/pages/contact"
+          }
+        },
+        "item-3": {
+          "type": "item",
+          "settings": {
+            "group": "prebuilt",
+            "kicker": "Enterprise bundle",
+            "title": "Regulatory Compliance Agent",
+            "desc": "Automated audit trails and real-time regulatory alignment.",
+            "meta": "",
+            "link_label": "View module",
+            "link": "/pages/contact"
+          }
+        },
+        "item-4": {
+          "type": "item",
+          "settings": {
+            "group": "prebuilt",
+            "kicker": "Enterprise bundle",
+            "title": "Neural Process Optimizer",
+            "desc": "Process bottlenecks found and resolved before they touch margin.",
+            "meta": "",
+            "link_label": "View module",
+            "link": "/pages/contact"
+          }
+        },
+        "item-5": {
+          "type": "item",
+          "settings": {
+            "group": "prebuilt",
+            "kicker": "Enterprise bundle",
+            "title": "Executive Data Synthesis",
+            "desc": "Instant C-suite reporting from disparate enterprise sources.",
+            "meta": "",
+            "link_label": "View module",
+            "link": "/pages/contact"
+          }
+        },
+        "item-6": {
+          "type": "item",
+          "settings": {
+            "group": "prebuilt",
+            "kicker": "Enterprise bundle",
+            "title": "Real-time Fraud Shield",
+            "desc": "Sophisticated fraud stopped by sub-second neural analysis.",
+            "meta": "",
+            "link_label": "View module",
+            "link": "/pages/contact"
+          }
+        },
+        "item-7": {
+          "type": "item",
+          "settings": {
+            "group": "tailored",
+            "kicker": "Ready to build",
+            "title": "Custom CRM Integrator",
+            "desc": "Your existing CRM deep-linked with agentic routing logic.",
+            "meta": "",
+            "link_label": "Contact for custom build",
+            "link": "/pages/contact"
+          }
+        },
+        "item-8": {
+          "type": "item",
+          "settings": {
+            "group": "tailored",
+            "kicker": "Ready to build",
+            "title": "Financial Data Synthesizer",
+            "desc": "Unified financial reporting with AI-driven insight on top.",
+            "meta": "",
+            "link_label": "Contact for custom build",
+            "link": "/pages/contact"
+          }
+        },
+        "item-9": {
+          "type": "item",
+          "settings": {
+            "group": "tailored",
+            "kicker": "Ready to build",
+            "title": "HR Voice Assistant",
+            "desc": "Multilingual voice interface for hands-free employee self-service.",
+            "meta": "",
+            "link_label": "Contact for custom build",
+            "link": "/pages/contact"
+          }
+        },
+        "item-10": {
+          "type": "item",
+          "settings": {
+            "group": "platform",
+            "kicker": "Core capability",
+            "title": "Neural Routing Fabric",
+            "desc": "Low-latency dispatch of intent to the agent best equipped to handle it.",
+            "meta": "Enterprise general release",
+            "link_label": "Full spec sheet",
+            "link": "/pages/contact"
+          }
+        },
+        "item-11": {
+          "type": "item",
+          "settings": {
+            "group": "platform",
+            "kicker": "Core capability",
+            "title": "SafeConnect Gateway",
+            "desc": "Encrypted transit for all PII and sensitive data passing through AI.",
+            "meta": "Enterprise general release",
+            "link_label": "Full spec sheet",
+            "link": "/pages/contact"
+          }
+        },
+        "item-12": {
+          "type": "item",
+          "settings": {
+            "group": "platform",
+            "kicker": "Core capability",
+            "title": "Real-time Synthesis Engine",
+            "desc": "Disparate sources consolidated into coherent natural language.",
+            "meta": "Enterprise general release",
+            "link_label": "Full spec sheet",
+            "link": "/pages/contact"
+          }
+        },
+        "item-13": {
+          "type": "item",
+          "settings": {
+            "group": "platform",
+            "kicker": "Core capability",
+            "title": "Governance & Drift Monitor",
+            "desc": "Continuous runtime monitoring for hallucination and voice drift.",
+            "meta": "Enterprise general release",
+            "link_label": "Full spec sheet",
+            "link": "/pages/contact"
+          }
+        },
+        "item-14": {
+          "type": "item",
+          "settings": {
+            "group": "platform",
+            "kicker": "Core capability",
+            "title": "Agent Orchestration",
+            "desc": "Multi-agent coordination for multi-step business resolution.",
+            "meta": "Enterprise general release",
+            "link_label": "Full spec sheet",
+            "link": "/pages/contact"
+          }
+        },
+        "item-15": {
+          "type": "item",
+          "settings": {
+            "group": "platform",
+            "kicker": "Core capability",
+            "title": "Distributed Context Memory",
+            "desc": "Persistent encrypted memory that holds context across touchpoints.",
+            "meta": "Enterprise general release",
+            "link_label": "Full spec sheet",
+            "link": "/pages/contact"
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3",
+        "item-4",
+        "item-5",
+        "item-6",
+        "item-7",
+        "item-8",
+        "item-9",
+        "item-10",
+        "item-11",
+        "item-12",
+        "item-13",
+        "item-14",
+        "item-15"
+      ],
+      "settings": {
+        "anchor": "braivex-apps",
+        "eyebrow": "What you can deploy",
+        "heading": "Pre-built, tailored, or built on the platform.",
+        "lede": "Regulation-aware applications with no long implementation cycles and no starting from scratch.",
+        "tab_1": "Pre-built solutions",
+        "tab_2": "Tailored apps",
+        "tab_3": "Platform capabilities",
+        "strip_eyebrow": "Marketplace accelerator",
+        "strip_face": true,
+        "strip_heading": "Build agentic AI applications 10x faster.",
+        "strip_body": "Hundreds of pre-built agents, workflow templates and integrations trusted by global enterprises. \nSkip the boilerplate, ship the outcome.",
+        "strip_cta_1_label": "Secure Early Access",
+        "strip_cta_1_link": "/pages/contact",
+        "strip_cta_2_label": "Explore Library",
+        "strip_cta_2_link": "/pages/marketplace"
+      }
+    },
+    "philosophy": {
+      "type": "braivex-philosophy",
+      "settings": {
+        "anchor": "philosophy",
+        "eyebrow": "Philosophy",
+        "heading": "Deliberate partnerships. Measurable outcomes.",
+        "body": "Braivex does not work with everyone, and that is deliberate. When we partner with a brand we bring the full weight of the platform, the expertise and the commitment.\nEvery integration is built to compound in value.",
+        "quote": "The best AI is not the most complex, \nit is the most purposeful.",
+        "quote_by": "Braivex product philosophy",
+        "cta_1_label": "Start Your Journey",
+        "cta_1_link": "/pages/contact",
+        "cta_2_label": "Explore Client Stories",
+        "cta_2_link": "/#insights"
+      }
+    },
+    "insights": {
+      "type": "braivex-insights",
+      "settings": {
+        "anchor": "insights",
+        "eyebrow": "Research and discourse",
+        "heading": "AI Insights",
+        "lede": "Original research, product breakthroughs and strategic thinking from the Braivex engineering team.",
+        "all_label": "View All Insights",
+        "all_link": "/blogs/news",
+        "blog": "news",
+        "post_limit": 5
+      }
+    },
+    "cta": {
+      "type": "braivex-cta",
+      "blocks": {
+        "path-1": {
+          "type": "path",
+          "settings": {
+            "kicker": "High touch",
+            "title": "Ready to see Braivex in action?",
+            "desc": "Talk to an AI specialist and see exactly how agentic AI changes your operations.",
+            "link_label": "Schedule a Deep Dive",
+            "link": "/pages/contact"
+          }
+        },
+        "path-2": {
+          "type": "path",
+          "settings": {
+            "kicker": "Self-service",
+            "title": "Want to start immediately?",
+            "desc": "Browse the marketplace and deploy production-ready agents in minutes.",
+            "link_label": "Explore the Marketplace",
+            "link": "/pages/marketplace"
+          }
+        }
+      },
+      "block_order": [
+        "path-1",
+        "path-2"
+      ],
+      "settings": {
+        "anchor": "get-started",
+        "heading": "Accelerate your business with AI that actually delivers."
+      }
+    },
+    "1787498296f68e5499": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "products": {
+      "type": "braivex-products",
+      "blocks": {
+        "loculens": {
+          "type": "product",
+          "settings": {
+            "kicker": "Review management · multi-location",
+            "name": "Loculens",
+            "headline": "Every review from every branch, in one workspace.\nThe team members mentioned are named and the reply is already drafted.",
+            "metric": "Live across 5 branches and 479 reviews for a national jewellery retailer",
+            "page_link": "https://loculens.braivex.com",
+            "mock": "loculens",
+            "reverse": false,
+            "feature_1_label": "Branch discovery",
+            "feature_1_region": "branches",
+            "feature_2_label": "Sentiment and topics",
+            "feature_2_region": "sentiment",
+            "feature_3_label": "Team-member mentions",
+            "feature_3_region": "team",
+            "feature_4_label": "Drafted replies",
+            "feature_4_region": "reply",
+            "cta_primary_label": "Start a 14-day trial",
+            "cta_primary_link": "https://loculens.braivex.com/signup",
+            "cta_secondary_label": "Open loculens.braivex.com"
+          }
+        },
+        "hiresieve": {
+          "type": "product",
+          "settings": {
+            "kicker": "Recruitment screening · evidence-quoted",
+            "name": "HireSieve",
+            "headline": "A folder of CVs goes in and a ranked shortlist comes out.\nEvery score quotes the line of the CV it came from.",
+            "metric": "About 45 seconds and a few cents per CV, with the cost shown before it spends",
+            "page_link": "https://hiresieve.braivex.com",
+            "mock": "hiresieve",
+            "reverse": true,
+            "feature_1_label": "Evidence quotes",
+            "feature_1_region": "evidence",
+            "feature_2_label": "Deterministic scoring",
+            "feature_2_region": "score",
+            "feature_3_label": "Flags, never rejects",
+            "feature_3_region": "flag",
+            "feature_4_label": "Asks before it spends",
+            "feature_4_region": "cost",
+            "cta_primary_label": "Request a deployment",
+            "cta_primary_link": "/pages/contact",
+            "cta_secondary_label": "Open hiresieve.braivex.com"
+          }
+        },
+        "p1": {
+          "type": "pillar",
+          "settings": {
+            "text": "An AI extracts. A deterministic engine calculates. A person decides."
+          }
+        },
+        "p2": {
+          "type": "pillar",
+          "settings": {
+            "text": "Deployed into the systems you already run, under your access controls."
+          }
+        },
+        "p3": {
+          "type": "pillar",
+          "settings": {
+            "text": "Every output can be traced to its source: a review, a line of a CV, a record."
+          }
+        },
+        "p4": {
+          "type": "pillar",
+          "settings": {
+            "text": "Every price is on the page."
+          }
+        },
+        "briefsieve": {
+          "type": "product",
+          "settings": {
+            "kicker": "Operator's daily brief · every channel",
+            "name": "BriefSieve",
+            "badge": "Early access",
+            "headline": "Ads, sales, stock, email, marketplaces and inbox, read for you each morning.\nA guru explains the numbers and is never allowed to calculate them.",
+            "metric": "Ten data sections, your own API keys, one brief",
+            "page_link": "https://mypa.services",
+            "mock": "briefsieve",
+            "reverse": false,
+            "feature_1_label": "The morning brief",
+            "feature_1_region": "brief",
+            "feature_2_label": "KPIs, compared",
+            "feature_2_region": "kpis",
+            "feature_3_label": "Your channels, your keys",
+            "feature_3_region": "channels",
+            "feature_4_label": "Ask the guru",
+            "feature_4_region": "guru",
+            "cta_primary_label": "Open BriefSieve",
+            "cta_primary_link": "https://mypa.services",
+            "cta_secondary_label": "Open mypa.services"
+          }
+        },
+        "homesieve": {
+          "type": "product",
+          "settings": {
+            "kicker": "Property listings copilot · cited answers",
+            "name": "HomeSieve",
+            "badge": "Early access",
+            "headline": "Ask about the market in plain language.\nThe listings that match come back scored against your brief, and each answer cites the listing it came from.",
+            "metric": "Five live listing sources, two of them scrapers we built",
+            "page_link": "/pages/homesieve",
+            "mock": "homesieve",
+            "reverse": true,
+            "feature_1_label": "Ask in plain language",
+            "feature_1_region": "ask",
+            "feature_2_label": "Live sources",
+            "feature_2_region": "sources",
+            "feature_3_label": "Scored listings",
+            "feature_3_region": "listings",
+            "feature_4_label": "Every answer cited",
+            "feature_4_region": "evidence",
+            "cta_primary_label": "Request early access",
+            "cta_primary_link": "/pages/contact",
+            "cta_secondary_label": "See how HomeSieve answers a brief"
+          }
+        },
+        "voicesieve": {
+          "type": "product",
+          "settings": {
+            "kicker": "Voice agents · inbound and win-back",
+            "name": "VoiceSieve",
+            "badge": "In development",
+            "headline": "It learns from your recorded calls, answers customers live from your order system, and calls lapsed customers back.\nEvery call opens with the agent saying it is an AI.",
+            "metric": "Specified end to end; product build starts after sign-off",
+            "page_link": "/pages/voicesieve",
+            "mock": "voicesieve",
+            "reverse": false,
+            "feature_1_label": "Mined from real calls",
+            "feature_1_region": "mine",
+            "feature_2_label": "Inbound, live from Shopify",
+            "feature_2_region": "inbound",
+            "feature_3_label": "Win-back calling",
+            "feature_3_region": "outbound",
+            "feature_4_label": "Hands off when unsure",
+            "feature_4_region": "handoff",
+            "cta_primary_label": "Join the waitlist",
+            "cta_primary_link": "/pages/contact",
+            "cta_secondary_label": "See how VoiceSieve handles a call"
+          }
+        }
+      },
+      "block_order": [
+        "loculens",
+        "hiresieve",
+        "briefsieve",
+        "homesieve",
+        "voicesieve",
+        "p1",
+        "p2",
+        "p3",
+        "p4"
+      ],
+      "settings": {
+        "anchor": "products",
+        "eyebrow": "Products",
+        "heading": "Purpose-built products. One intelligence layer.",
+        "lede": "Each product does one job inside a system you already run: Google reviews, hiring, marketing data, property listings, the phone line.\nA person makes every decision, and every output shows where it came from.",
+        "bridge_eyebrow": "What they share",
+        "bridge_heading": "Different jobs. The same discipline."
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "routes",
+    "products",
+    "partners",
+    "industries",
+    "catalogue",
+    "philosophy",
+    "insights",
+    "cta",
+    "1787498296f68e5499"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "braivex-footer": {
+      "type": "braivex-footer",
+      "settings": {
+        "cta_link": "/pages/contact",
+        "menu_1_title": "Platform",
+        "menu_2_title": "Company",
+        "menu_1": "footer",
+        "menu_2": "main-menu"
+      }
+    }
+  },
+  "order": [
+    "braivex-footer"
+  ]
+}

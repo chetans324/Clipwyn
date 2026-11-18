@@ -1,0 +1,239 @@
+- generic [active] [ref=f33e1]:
+  - generic [ref=f33e2]:
+    - complementary "Sidebar" [ref=f33e3]:
+      - generic [ref=f33e4]:
+        - img "Clipwyn by Braivex" [ref=f33e5]
+        - button "Collapse sidebar" [ref=f33e6] [cursor=pointer]
+      - navigation "Main" [ref=f33e9]:
+        - button "Home" [ref=f33e10] [cursor=pointer]
+        - button "All videos" [ref=f33e14] [cursor=pointer]
+        - heading "Creators" [level=4] [ref=f33e18]
+        - button "New creator" [ref=f33e19] [cursor=pointer]
+        - heading "Owner" [level=4] [ref=f33e23]
+        - link "Admin dashboard" [ref=f33e24] [cursor=pointer]:
+          - /url: /admin
+      - generic [ref=f33e28]:
+        - button "AI Not set up" [ref=f33e29] [cursor=pointer]:
+          - generic [ref=f33e33]:
+            - generic [ref=f33e34]: AI
+            - generic [ref=f33e35]: Not set up
+        - generic [ref=f33e36]:
+          - button "T Test Owner test@example.com" [ref=f33e37] [cursor=pointer]:
+            - generic [ref=f33e38]: T
+            - generic [ref=f33e39]:
+              - generic [ref=f33e40]: Test Owner
+              - generic [ref=f33e41]: test@example.com
+          - button "Notifications" [ref=f33e42] [cursor=pointer]
+    - main [ref=f33e45]:
+      - generic [ref=f33e47]:
+        - heading "Home" [level=1] [ref=f33e48]
+        - paragraph [ref=f33e50]: Good afternoon. 0 creators.
+      - alert [ref=f33e52]:
+        - generic [ref=f33e55]:
+          - text: "Clipwyn can't make clips yet: ffmpeg isn't installed on this computer. Open a terminal, run"
+          - code [ref=f33e56]: winget install Gyan.FFmpeg
+          - text: "(Mac:"
+          - code [ref=f33e57]: brew install ffmpeg
+          - text: ", Linux:"
+          - code [ref=f33e58]: sudo apt install ffmpeg
+          - text: ), then close Clipwyn and start it again.
+      - generic [ref=f33e60]:
+        - heading "What do you want to clip today?" [level=2] [ref=f33e61]
+        - paragraph [ref=f33e62]: Paste a link or drop in videos. You get captioned shorts back.
+        - generic [ref=f33e64]:
+          - textbox "Video link" [ref=f33e68]:
+            - /placeholder: Paste a YouTube, Twitch or Kick video link
+          - generic [ref=f33e70]:
+            - button "Upload video" [ref=f33e71] [cursor=pointer]
+            - button "File under creator" [ref=f33e75] [cursor=pointer]:
+              - generic [ref=f33e78]: No creator
+            - button "Options" [ref=f33e81] [cursor=pointer]
+            - generic [ref=f33e84]: or drop a video file here
+            - button "Make clips" [ref=f33e85] [cursor=pointer]
+          - generic:
+            - generic:
+              - generic [ref=f33e88]:
+                - generic [ref=f33e89]: Clips
+                - generic [ref=f33e90]:
+                  - generic [ref=f33e91]:
+                    - generic [ref=f33e92]: How many
+                    - generic [ref=f33e93]:
+                      - button "Less" [ref=f33e94] [cursor=pointer]
+                      - spinbutton "How many" [ref=f33e97]: "6"
+                      - button "More" [ref=f33e98] [cursor=pointer]
+                  - generic [ref=f33e101]:
+                    - generic [ref=f33e102]: Shortest
+                    - generic [ref=f33e103]:
+                      - button "Less" [ref=f33e104] [cursor=pointer]
+                      - spinbutton "Shortest" [ref=f33e107]: "15"
+                      - generic [ref=f33e108]: s
+                      - button "More" [ref=f33e109] [cursor=pointer]
+                  - generic [ref=f33e112]:
+                    - generic [ref=f33e113]: Longest
+                    - generic [ref=f33e114]:
+                      - button "Less" [ref=f33e115] [cursor=pointer]
+                      - spinbutton "Longest" [ref=f33e118]: "60"
+                      - generic [ref=f33e119]: s
+                      - button "More" [ref=f33e120] [cursor=pointer]
+              - generic [ref=f33e123]:
+                - generic [ref=f33e124]:
+                  - generic [ref=f33e125]: Caption style
+                  - generic [ref=f33e126] [cursor=pointer]:
+                    - checkbox "Generate captions" [checked] [ref=f33e127]
+                    - text: Generate captions
+                - group "Caption style" [ref=f33e128]:
+                  - button "CLIP THIS Bounce" [pressed] [ref=f33e129] [cursor=pointer]:
+                    - generic [ref=f33e130]:
+                      - text: CLIP
+                      - generic [ref=f33e131]: THIS
+                    - text: Bounce
+                  - button "CLIP THIS Hype" [ref=f33e132] [cursor=pointer]:
+                    - generic [ref=f33e133]:
+                      - text: CLIP
+                      - generic [ref=f33e134]: THIS
+                    - text: Hype
+                  - button "Clip this Clean" [ref=f33e135] [cursor=pointer]:
+                    - generic [ref=f33e136]:
+                      - text: Clip
+                      - generic [ref=f33e137]: this
+                    - text: Clean
+              - generic [ref=f33e138]:
+                - generic [ref=f33e139]: Layout
+                - group [ref=f33e140]:
+                  - button "Blurred fill" [pressed] [ref=f33e141] [cursor=pointer]
+                  - button "Zoomed in" [ref=f33e145] [cursor=pointer]
+                  - button "Fill screen" [ref=f33e149] [cursor=pointer]
+                  - button "Gameplay + facecam" [ref=f33e153] [cursor=pointer]
+              - generic [ref=f33e157]:
+                - generic [ref=f33e158]: Video quality
+                - group "Video quality" [ref=f33e159]:
+                  - button "720p Fast" [pressed] [ref=f33e160] [cursor=pointer]:
+                    - text: 720p
+                    - generic [ref=f33e161]: Fast
+                  - button "1080p Sharper, about 2x slower" [ref=f33e162] [cursor=pointer]:
+                    - text: 1080p
+                    - generic [ref=f33e163]: Sharper, about 2x slower
+              - generic [ref=f33e164]:
+                - generic [ref=f33e165]: Part of the video
+                - generic [ref=f33e166]:
+                  - generic [ref=f33e167]:
+                    - text: From
+                    - spinbutton "From minute" [ref=f33e168]
+                    - text: min
+                  - generic [ref=f33e171]:
+                    - text: To
+                    - spinbutton "Up to minute" [ref=f33e172]
+                    - text: min
+      - generic [ref=f33e174]:
+        - generic [ref=f33e175]:
+          - generic [ref=f33e176]:
+            - generic [ref=f33e180]: "0"
+            - generic [ref=f33e181]: Recording now
+          - generic [ref=f33e182]:
+            - generic [ref=f33e186]: "0"
+            - generic [ref=f33e187]: Clips today
+          - generic [ref=f33e188]:
+            - generic [ref=f33e192]: "0"
+            - generic [ref=f33e193]: Posted today
+          - generic [ref=f33e194]:
+            - generic [ref=f33e198]: "0"
+            - generic [ref=f33e199]: Waiting to post
+        - generic [ref=f33e200]:
+          - generic [ref=f33e201]:
+            - generic [ref=f33e202]:
+              - generic [ref=f33e203]:
+                - heading "Activity" [level=2] [ref=f33e204]
+                - paragraph [ref=f33e205]: Last 14 days
+              - generic [ref=f33e206]:
+                - generic [ref=f33e207]:
+                  - generic [ref=f33e208]: "0"
+                  - text: Clips made
+                - generic [ref=f33e209]:
+                  - generic [ref=f33e210]: "0"
+                  - text: Posted
+                - generic [ref=f33e211]:
+                  - generic [ref=f33e212]: "0"
+                  - text: Views
+                - generic [ref=f33e213]:
+                  - generic [ref=f33e214]: $0.00
+                  - text: Est. earnings
+            - generic [ref=f33e215]:
+              - generic [ref=f33e216]: Clips made
+              - generic [ref=f33e218]: Posted
+            - img "Clips made and posted per day, last 14 days" [ref=f33e220]:
+              - generic [ref=f33e221]: "0"
+              - generic [ref=f33e222]: "1"
+              - generic [ref=f33e223]: "2"
+              - generic [ref=f33e224]: "3"
+              - generic [ref=f33e225]: "4"
+              - 'generic "5 Nov: 0 clips made, 0 posted" [ref=f33e226]'
+              - 'generic "6 Nov: 0 clips made, 0 posted" [ref=f33e228]'
+              - generic [ref=f33e230]: 6 Nov
+              - 'generic "7 Nov: 0 clips made, 0 posted" [ref=f33e231]'
+              - 'generic "8 Nov: 0 clips made, 0 posted" [ref=f33e233]'
+              - generic [ref=f33e235]: 8 Nov
+              - 'generic "9 Nov: 0 clips made, 0 posted" [ref=f33e236]'
+              - 'generic "10 Nov: 0 clips made, 0 posted" [ref=f33e238]'
+              - generic [ref=f33e240]: 10 Nov
+              - 'generic "11 Nov: 0 clips made, 0 posted" [ref=f33e241]'
+              - 'generic "12 Nov: 0 clips made, 0 posted" [ref=f33e243]'
+              - generic [ref=f33e245]: 12 Nov
+              - 'generic "13 Nov: 0 clips made, 0 posted" [ref=f33e246]'
+              - 'generic "14 Nov: 0 clips made, 0 posted" [ref=f33e248]'
+              - generic [ref=f33e250]: 14 Nov
+              - 'generic "15 Nov: 0 clips made, 0 posted" [ref=f33e251]'
+              - 'generic "16 Nov: 0 clips made, 0 posted" [ref=f33e253]'
+              - generic [ref=f33e255]: 16 Nov
+              - 'generic "17 Nov: 0 clips made, 0 posted" [ref=f33e256]'
+              - 'generic "18 Nov: 0 clips made, 0 posted" [ref=f33e258]'
+              - generic [ref=f33e260]: Today
+              - generic [ref=f33e261]: No clips in the last 14 days yet
+          - generic [ref=f33e262]:
+            - heading "AI" [level=2] [ref=f33e263]
+            - generic [ref=f33e264]: Not set up
+            - paragraph [ref=f33e265]: Clips are picked by loudness until an AI key is added.
+            - generic [ref=f33e266]:
+              - generic [ref=f33e267]:
+                - generic [ref=f33e268]: "0"
+                - generic [ref=f33e269]: AI calls today
+              - generic [ref=f33e270]:
+                - generic [ref=f33e271]: "0"
+                - generic [ref=f33e272]: Tokens today
+            - generic [ref=f33e273]:
+              - button "Add AI key" [ref=f33e274] [cursor=pointer]
+              - button "View usage" [ref=f33e277] [cursor=pointer]
+        - generic [ref=f33e280]:
+          - generic [ref=f33e282]:
+            - heading "Next steps" [level=2] [ref=f33e283]
+            - paragraph [ref=f33e284]: Finish setting up Clipwyn
+          - generic [ref=f33e285]:
+            - button "1 Add your first creator Give each streamer their own workspace, settings and folder." [ref=f33e286] [cursor=pointer]:
+              - generic [ref=f33e287]: "1"
+              - generic [ref=f33e288]:
+                - generic [ref=f33e289]: Add your first creator
+                - text: Give each streamer their own workspace, settings and folder.
+            - button "2 Make your first clips Paste a video link in the box above." [ref=f33e292] [cursor=pointer]:
+              - generic [ref=f33e293]: "2"
+              - generic [ref=f33e294]:
+                - generic [ref=f33e295]: Make your first clips
+                - text: Paste a video link in the box above.
+            - button "3 Connect a posting account YouTube, Instagram or TikTok, in one click." [ref=f33e298] [cursor=pointer]:
+              - generic [ref=f33e299]: "3"
+              - generic [ref=f33e300]:
+                - generic [ref=f33e301]: Connect a posting account
+                - text: YouTube, Instagram or TikTok, in one click.
+        - generic [ref=f33e304]:
+          - generic [ref=f33e306]:
+            - heading "Creators" [level=2] [ref=f33e307]
+            - paragraph [ref=f33e308]: Each creator's status and results
+          - generic [ref=f33e309]:
+            - generic [ref=f33e310]: No creators yet
+            - text: Add one to give each streamer their own workspace.
+        - generic [ref=f33e311]:
+          - generic [ref=f33e312]:
+            - generic [ref=f33e313]:
+              - heading "Post queue" [level=2] [ref=f33e314]
+              - paragraph [ref=f33e315]: Queued clips go out at their scheduled time.
+            - button "Pause all posting" [ref=f33e316] [cursor=pointer]
+          - paragraph [ref=f33e319]: Nothing queued or posted yet.
+  - status

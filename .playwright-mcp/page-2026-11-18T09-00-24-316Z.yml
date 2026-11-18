@@ -1,0 +1,131 @@
+- generic [active] [ref=f21e1]:
+  - banner [ref=f21e2]:
+    - generic [ref=f21e3]:
+      - link "Clipwyn by Braivex home" [ref=f21e4] [cursor=pointer]:
+        - /url: /
+        - img "Clipwyn by Braivex" [ref=f21e5]
+      - navigation "Legal pages" [ref=f21e6]:
+        - link "Terms" [ref=f21e7] [cursor=pointer]:
+          - /url: /terms
+        - link "Privacy" [ref=f21e8] [cursor=pointer]:
+          - /url: /privacy
+        - link "Acceptable use" [ref=f21e9] [cursor=pointer]:
+          - /url: /acceptable-use
+  - main [ref=f21e10]:
+    - article [ref=f21e11]:
+      - heading "Privacy Policy" [level=1] [ref=f21e12]
+      - paragraph [ref=f21e13]: Last updated 13 November 2026
+      - paragraph [ref=f21e14]: This policy explains what Braivex ("Clipwyn", "we") collects when you use http://127.0.0.1:8770, why, who else handles it, how long we keep it and the choices you have. We act as the controller of this information.
+      - heading "What we collect" [level=2] [ref=f21e15]
+      - list [ref=f21e16]:
+        - listitem [ref=f21e17]: Account. Email address, name, and either a password (stored only as a one-way scrypt hash) or, with Sign in with Google, your Google account ID, name and email. Whether you have confirmed your email.
+        - listitem [ref=f21e18]: What you give us to clip. Links you paste, files you upload, creators and channel links you add, and your settings.
+        - listitem [ref=f21e19]: What we make from it. Downloaded videos, transcripts, loudness and chat-activity figures, clips, titles, captions and scores.
+        - listitem [ref=f21e20]: "Public channel details. For channel links you add: the channel's public name, picture, follower count and live status from YouTube, Twitch or Kick."
+        - listitem [ref=f21e21]: Connected accounts. Access tokens from YouTube or Instagram if you connect them to post clips.
+        - listitem [ref=f21e22]: "AI usage. A record of each AI check made for your account: when, what for and how many tokens it used."
+        - listitem [ref=f21e23]: Technical data. Session records with IP address and browser, and server logs, used for security and to keep the Service running.
+      - heading "Why we use it" [level=2] [ref=f21e24]
+      - list [ref=f21e25]:
+        - listitem [ref=f21e26]: "To provide the Service you asked for: downloading, transcribing, judging, cutting, captioning and posting clips (performance of our contract with you)."
+        - listitem [ref=f21e27]: To keep accounts secure, prevent fraud and abuse, and enforce our Terms (our legitimate interests).
+        - listitem [ref=f21e28]: To send account emails such as email confirmation and password resets (contract and legitimate interests).
+      - paragraph [ref=f21e29]: We do not sell your information, do not use it for advertising, and do not use your videos or clips to train AI models.
+      - heading "Who else handles it" [level=2] [ref=f21e30]
+      - list [ref=f21e31]:
+        - listitem [ref=f21e32]: Our AI provider receives transcript text and loudness and chat figures for the moments being judged, to choose clips and write titles and captions. Speech is transcribed on our own servers.
+        - listitem [ref=f21e33]: Our email provider delivers account emails.
+        - listitem [ref=f21e34]: Our hosting providers store and run the Service.
+        - listitem [ref=f21e35]: YouTube, Instagram, Twitch and Kick receive the requests needed to fetch content and public channel details and, when you choose, the clips you post.
+        - listitem [ref=f21e36]: Authorities or others where the law requires it, or to protect our rights, users or the public.
+      - paragraph [ref=f21e37]: Some of these providers process data outside your country. Where required, we rely on appropriate safeguards such as standard contractual clauses.
+      - heading "Google user data" [level=2] [ref=f21e38]
+      - generic [ref=f21e39]:
+        - text: Clipwyn's use and transfer of information received from Google APIs adheres to the
+        - link "Google API Services User Data Policy" [ref=f21e40] [cursor=pointer]:
+          - /url: https://developers.google.com/terms/api-services-user-data-policy
+        - text: ", including the Limited Use requirements."
+      - paragraph [ref=f21e41]: With Sign in with Google we receive only your name, email address and Google account ID, to create and sign in to your account. If you connect YouTube, we use that access only to upload the clips you choose to your channel. We do not use Google user data for advertising, do not sell it, and do not let humans read it except with your permission, for security, or where the law requires. You can remove access in your Google account's security settings or by disconnecting the account in Clipwyn.
+      - heading "Cookies" [level=2] [ref=f21e42]
+      - paragraph [ref=f21e43]: We use one essential cookie to keep you signed in. It is not readable by page scripts and is not used for tracking. We use no advertising or analytics cookies, so no consent banner is needed.
+      - heading "How long we keep it" [level=2] [ref=f21e44]
+      - list [ref=f21e45]:
+        - listitem [ref=f21e46]: "Account data: while your account is open."
+        - listitem [ref=f21e47]: "Videos, transcripts and clips: until you delete them or your account."
+        - listitem [ref=f21e48]: "Live-stream recordings: only in a short rolling buffer while recording, then deleted."
+        - listitem [ref=f21e49]: "Security logs: for a limited period, then deleted."
+      - heading "Your rights" [level=2] [ref=f21e50]
+      - paragraph [ref=f21e51]:
+        - text: Depending on where you live, you can ask to access, correct, delete or receive a copy of your data, object to or restrict some uses, and complain to your data protection authority. You can delete videos and disconnect accounts in the app at any time. For anything else, contact
+        - link "support@braivex.com" [ref=f21e52] [cursor=pointer]:
+          - /url: mailto:support@braivex.com
+        - text: . We may need to confirm your identity first.
+      - heading "Security" [level=2] [ref=f21e53]
+      - paragraph [ref=f21e54]: Connections are encrypted, passwords are hashed, each account's data is kept separate, and access is limited. No system is perfectly secure; if a breach affects you, we will tell you as the law requires.
+      - heading "Children" [level=2] [ref=f21e55]
+      - paragraph [ref=f21e56]: Clipwyn is not meant for children under 13, or under 16 where local law sets that age. We do not knowingly collect their information and will delete it if we learn of it.
+      - heading "Changes" [level=2] [ref=f21e57]
+      - paragraph [ref=f21e58]: We will announce material changes in the app or by email before they take effect.
+      - heading "Contact" [level=2] [ref=f21e59]
+      - paragraph [ref=f21e60]:
+        - text: "Privacy questions:"
+        - link "support@braivex.com" [ref=f21e61] [cursor=pointer]:
+          - /url: mailto:support@braivex.com
+  - contentinfo [ref=f21e62]:
+    - generic [ref=f21e63]:
+      - generic [ref=f21e64]:
+        - generic [ref=f21e65]:
+          - link "Clipwyn by Braivex home" [ref=f21e66] [cursor=pointer]:
+            - /url: /
+            - img "Clipwyn by Braivex" [ref=f21e67]
+          - paragraph [ref=f21e68]: Clipwyn turns streams and long videos into captioned vertical clips. A product of Braivex.
+          - link "Start clipping" [ref=f21e69] [cursor=pointer]:
+            - /url: /signup
+        - generic [ref=f21e70]:
+          - heading "Product" [level=4] [ref=f21e71]
+          - list [ref=f21e72]:
+            - listitem [ref=f21e73]:
+              - link "How it works" [ref=f21e74] [cursor=pointer]:
+                - /url: /#how
+            - listitem [ref=f21e75]:
+              - link "Features" [ref=f21e76] [cursor=pointer]:
+                - /url: /#features
+            - listitem [ref=f21e77]:
+              - link "Live clipping" [ref=f21e78] [cursor=pointer]:
+                - /url: /#live
+            - listitem [ref=f21e79]:
+              - link "Open source" [ref=f21e80] [cursor=pointer]:
+                - /url: /#open
+            - listitem [ref=f21e81]:
+              - link "FAQ" [ref=f21e82] [cursor=pointer]:
+                - /url: /#faq
+        - generic [ref=f21e83]:
+          - heading "Company" [level=4] [ref=f21e84]
+          - list [ref=f21e85]:
+            - listitem [ref=f21e86]:
+              - link "support@braivex.com" [ref=f21e87] [cursor=pointer]:
+                - /url: mailto:support@braivex.com
+            - listitem [ref=f21e88]:
+              - link "Create an account" [ref=f21e89] [cursor=pointer]:
+                - /url: /signup
+            - listitem [ref=f21e90]:
+              - link "Sign in" [ref=f21e91] [cursor=pointer]:
+                - /url: /login
+        - generic [ref=f21e92]:
+          - heading "Legal" [level=4] [ref=f21e93]
+          - list [ref=f21e94]:
+            - listitem [ref=f21e95]:
+              - link "Terms of Service" [ref=f21e96] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=f21e97]:
+              - link "Privacy Policy" [ref=f21e98] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=f21e99]:
+              - link "Acceptable Use" [ref=f21e100] [cursor=pointer]:
+                - /url: /acceptable-use
+      - generic [ref=f21e101]:
+        - generic [ref=f21e102]: © 2026 Clipwyn by Braivex
+        - generic [ref=f21e103]:
+          - text: Braivex ·
+          - link "support@braivex.com" [ref=f21e104] [cursor=pointer]:
+            - /url: mailto:support@braivex.com

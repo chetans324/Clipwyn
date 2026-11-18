@@ -1,0 +1,13 @@
+- generic [active] [ref=f14e1]:
+  - generic [ref=f14e2]:
+    - complementary "Sidebar" [ref=f14e3]:
+      - generic [ref=f14e4]:
+        - img "Clipwyn by Braivex" [ref=f14e5]
+        - button "Collapse sidebar" [ref=f14e6] [cursor=pointer]
+      - navigation "Main" [ref=f14e9]
+    - main [ref=f14e11]:
+      - generic [ref=f14e12]:
+        - generic:
+          - heading [level=1]
+          - paragraph
+  - status

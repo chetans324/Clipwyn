@@ -1,0 +1,249 @@
+- generic [active] [ref=f17e1]:
+  - banner [ref=f17e2]:
+    - generic [ref=f17e3]:
+      - link "Clipwyn by Braivex home" [ref=f17e4] [cursor=pointer]:
+        - /url: /
+        - img "Clipwyn by Braivex" [ref=f17e5]
+      - link "Open Clipwyn" [ref=f17e6] [cursor=pointer]:
+        - /url: /app
+  - main [ref=f17e7]:
+    - generic [ref=f17e8]:
+      - generic [ref=f17e10]:
+        - link "Live Clips streams as they happen" [ref=f17e11] [cursor=pointer]:
+          - /url: "#live"
+          - generic [ref=f17e12]: Live
+          - generic [ref=f17e14]: Clips streams as they happen
+        - heading "Clip live streams while they are still live" [level=1] [ref=f17e15]:
+          - text: Clip live streams
+          - generic [ref=f17e16]: while they are still live
+        - paragraph [ref=f17e17]: Add a streamer once. Clipwyn records the stream, finds the best moments and hands you captioned vertical clips while it is still live. Replays work too.
+        - generic [ref=f17e18]:
+          - generic [ref=f17e20]:
+            - textbox "Video link" [ref=f17e24]:
+              - /placeholder: Paste a YouTube, Twitch or Kick link
+            - button "Get clips" [ref=f17e25] [cursor=pointer]
+          - link "Upload a video" [ref=f17e28] [cursor=pointer]:
+            - /url: /app
+        - generic [ref=f17e31]:
+          - generic [ref=f17e32]: Free and open source
+          - generic [ref=f17e36]: Uses your own AI key
+          - generic [ref=f17e39]: Runs on your own server
+      - figure "Hype caption style" [ref=f17e43]:
+        - generic [ref=f17e46]: Hypecaption style
+      - paragraph [ref=f17e47]: The three caption styles, rendered by Clipwyn itself.
+    - generic [ref=f17e49]:
+      - generic [ref=f17e50]:
+        - paragraph [ref=f17e51]: Clips from
+        - generic [ref=f17e52]: YouTube
+        - generic [ref=f17e53]: Twitch
+        - generic [ref=f17e54]: Kick
+        - generic [ref=f17e55]: Your own video files
+      - generic [ref=f17e56]:
+        - paragraph [ref=f17e57]: Posts straight to
+        - generic [ref=f17e58]: YouTube Shorts
+        - generic [ref=f17e59]: Instagram Reels
+    - generic [ref=f17e61]:
+      - paragraph [ref=f17e62]: Open source
+      - heading "Free to use. Runs on your own machine, with your own AI key." [level=2] [ref=f17e63]
+      - paragraph [ref=f17e64]: "Clipwyn is free and open source. Install it on your computer or a server, add an API key for the AI you like, and every feature is yours: no plans, no seats and no limits."
+      - generic [ref=f17e65]:
+        - generic [ref=f17e66]:
+          - generic [ref=f17e67]: Freeand open source
+          - generic [ref=f17e68]: Read the code, change it, host it yourself.
+        - generic [ref=f17e69]:
+          - generic [ref=f17e70]: Your keyany AI you like
+          - generic [ref=f17e71]: Gemini, OpenAI, Grok, Claude, OpenRouter, or a local model.
+        - generic [ref=f17e72]:
+          - generic [ref=f17e73]: Your serveryour data
+          - generic [ref=f17e74]: Speech is transcribed on your own machine. Videos and clips stay there.
+    - generic [ref=f17e76]:
+      - paragraph [ref=f17e77]: How it works
+      - heading "Three steps from a stream to a folder of clips." [level=2] [ref=f17e78]
+      - generic [ref=f17e79]:
+        - generic [ref=f17e80]:
+          - generic [ref=f17e81]: "01"
+          - generic [ref=f17e82]:
+            - heading "Paste a link, upload, or add a streamer" [level=3] [ref=f17e83]
+            - paragraph [ref=f17e84]: Drop in a YouTube, Twitch or Kick link, or upload a video file. For live streams, add the streamer's channel once and Clipwyn records when they go live. Pick a caption style and how long clips should be.
+          - generic [aria-hidden] [ref=f17e85]:
+            - generic [ref=f17e86]: Video to clips
+            - generic [ref=f17e87]: Paste a YouTube, Twitch or Kick link
+            - generic [ref=f17e90]: Or upload your video
+            - generic [ref=f17e93]: Caption style
+            - generic [ref=f17e94]:
+              - generic [ref=f17e95]: Bounce
+              - generic [ref=f17e96]: Hype
+              - generic [ref=f17e97]: Clean
+            - generic [ref=f17e98]: Make clips
+        - generic [ref=f17e101]:
+          - generic [ref=f17e102]: "02"
+          - generic [ref=f17e103]:
+            - heading "The AI finds the moments" [level=3] [ref=f17e104]
+            - paragraph [ref=f17e105]: The whole recording is transcribed, the strongest moments are picked and scored, and each one is cut into a vertical clip with captions timed to the voice. A 15-minute video takes about two minutes. Long streams hand over their first clips after about two.
+          - generic [aria-hidden] [ref=f17e106]:
+            - generic [ref=f17e107]: Making your clips
+            - generic [ref=f17e108]:
+              - generic [ref=f17e109]: Getting the audio
+              - generic [ref=f17e111]: Writing the transcript
+              - generic [ref=f17e113]: Finding the best moments
+              - generic [ref=f17e115]: Making the clips
+        - generic [ref=f17e118]:
+          - generic [ref=f17e119]: "03"
+          - generic [ref=f17e120]:
+            - heading "Download, post, or keep editing" [level=3] [ref=f17e121]
+            - paragraph [ref=f17e122]: Every clip arrives captioned, scored, and with a hook, title, description and hashtags written for it. Trim it, change the style, download it, or queue it to post. Each video keeps its own set of clips to come back to.
+          - generic [ref=f17e123]:
+            - generic "A clip made by Clipwyn" [ref=f17e124]
+            - generic [ref=f17e125]:
+              - generic [ref=f17e126]: Download
+              - generic [ref=f17e129]: Copy post text
+              - generic [ref=f17e132]: Post
+    - generic [ref=f17e136]:
+      - paragraph [ref=f17e137]: Features
+      - heading "The parts of clipping that eat your week." [level=2] [ref=f17e138]
+      - generic [ref=f17e139]:
+        - generic [ref=f17e140]:
+          - generic [ref=f17e141]:
+            - heading "Scored by two separate judges" [level=3] [ref=f17e142]
+            - paragraph [ref=f17e143]: One AI reads only what was said. Another sees only how loud the streamer got and how busy chat was. During a live stream, a clip is made when both agree, so you get moments, not filler.
+          - generic [ref=f17e145]:
+            - generic [ref=f17e146]:
+              - text: Words judge
+              - generic [ref=f17e149]: reads what was said
+            - generic [ref=f17e150]: +
+            - generic [ref=f17e151]:
+              - text: Reaction judge
+              - generic [ref=f17e154]: loudness and chat
+            - generic [ref=f17e158]:
+              - text: Clip
+              - generic [ref=f17e161]: when both agree
+        - generic [ref=f17e162]:
+          - generic [ref=f17e163]:
+            - heading "Captions, styled once" [level=3] [ref=f17e164]
+            - paragraph [ref=f17e165]: Word-by-word captions are burned into every clip, with the key words highlighted and a hook line on top. Pick one of three styles per creator and every clip follows it.
+          - generic [ref=f17e167]:
+            - img "A clip with captions made by Clipwyn" [ref=f17e168]
+            - img "A clip with captions made by Clipwyn" [ref=f17e169]
+            - img "A clip with captions made by Clipwyn" [ref=f17e170]
+        - generic [ref=f17e171]:
+          - generic [ref=f17e172]:
+            - heading "Clips while they are still live" [level=3] [ref=f17e173]
+            - paragraph [ref=f17e174]: Add a streamer's channel and Clipwyn can start recording by itself when they go live. It keeps the last stretch of stream, checks it as often as every minute, and has clips ready before the stream ends.
+          - generic [ref=f17e176]:
+            - generic [ref=f17e177]: Live
+            - text: Records the stream and checks it as often as every minute
+        - generic [ref=f17e208]:
+          - generic [ref=f17e209]:
+            - heading "Every AI call accounted for" [level=3] [ref=f17e210]
+            - paragraph [ref=f17e211]: Each time the AI works it is listed under one of these, with the creator, the video and the tokens used, so you always know what your key is doing.
+          - generic [ref=f17e213]:
+            - generic [ref=f17e214]: "Video: finding clips"
+            - generic [ref=f17e218]: "Live: words judge"
+            - generic [ref=f17e222]: "Live: reaction judge"
+            - generic [ref=f17e226]: "Hand clip: title and hook"
+    - generic [ref=f17e231]:
+      - heading "Built for anyone with long footage and no time to cut it." [level=2] [ref=f17e232]
+      - tablist "Who Clipwyn is for" [ref=f17e233]:
+        - tab "Clippers" [selected] [ref=f17e234] [cursor=pointer]
+        - tab "Streamers" [ref=f17e235] [cursor=pointer]
+        - tab "Podcasters" [ref=f17e236] [cursor=pointer]
+        - tab "Agencies" [ref=f17e237] [cursor=pointer]
+        - tab "Marketing teams" [ref=f17e238] [cursor=pointer]
+      - tabpanel [ref=f17e239]:
+        - generic [ref=f17e240]:
+          - paragraph [ref=f17e241]: Clippers
+          - paragraph [ref=f17e242]: A streamer is live for six hours and the campaign pays per view. The clip that wins is the one posted first.
+          - paragraph [ref=f17e243]: Clipwyn records the stream, checks it as often as every minute and has captioned clips ready while the stream is still going. You pick, post and move to the next creator.
+        - generic [ref=f17e244]:
+          - generic [ref=f17e245]:
+            - generic [ref=f17e246]: From
+            - text: Six-hour live streams
+          - generic [ref=f17e250]:
+            - generic [ref=f17e251]: To
+            - text: Clips ready before it ends
+    - generic [ref=f17e253]:
+      - generic [ref=f17e254]:
+        - paragraph [ref=f17e255]: FAQ
+        - heading "Got any questions left?" [level=2] [ref=f17e256]
+        - paragraph [ref=f17e257]: The things people ask before they run their first stream through Clipwyn.
+      - generic [ref=f17e258]:
+        - group [ref=f17e259]:
+          - generic "Is Clipwyn free? +" [ref=f17e260] [cursor=pointer]
+          - paragraph [ref=f17e261]: Yes. Clipwyn is free and open source. You run it on your own computer or server, and there are no plans or fees.
+        - group [ref=f17e262]:
+          - generic "Which AI does it use? +" [ref=f17e263] [cursor=pointer]
+        - group [ref=f17e264]:
+          - generic "What happens without an AI key? +" [ref=f17e265] [cursor=pointer]
+        - group [ref=f17e266]:
+          - generic "Which videos work best? +" [ref=f17e267] [cursor=pointer]
+        - group [ref=f17e268]:
+          - generic "How long are the clips, and what shape? +" [ref=f17e269] [cursor=pointer]
+        - group [ref=f17e270]:
+          - generic "Can I change a clip afterwards? +" [ref=f17e271] [cursor=pointer]
+        - group [ref=f17e272]:
+          - generic "Can I clip any streamer? +" [ref=f17e273] [cursor=pointer]
+    - generic [ref=f17e275]:
+      - heading "Your last stream is a week of clips." [level=2] [ref=f17e276]
+      - paragraph [ref=f17e277]: Paste the link and see what the AI picks. Free and open source, on your own AI key.
+      - generic [ref=f17e280]:
+        - textbox "Video link" [ref=f17e284]:
+          - /placeholder: Paste a YouTube, Twitch or Kick link
+        - button "Get clips" [ref=f17e285] [cursor=pointer]
+  - contentinfo [ref=f17e288]:
+    - generic [ref=f17e289]:
+      - generic [ref=f17e290]:
+        - generic [ref=f17e291]:
+          - link "Clipwyn by Braivex home" [ref=f17e292] [cursor=pointer]:
+            - /url: /
+            - img "Clipwyn by Braivex" [ref=f17e293]
+          - paragraph [ref=f17e294]: Clipwyn turns streams and long videos into captioned vertical clips. A product of Braivex.
+          - link "Start clipping" [ref=f17e295] [cursor=pointer]:
+            - /url: /signup
+        - generic [ref=f17e296]:
+          - heading "Product" [level=4] [ref=f17e297]
+          - list [ref=f17e298]:
+            - listitem [ref=f17e299]:
+              - link "How it works" [ref=f17e300] [cursor=pointer]:
+                - /url: /#how
+            - listitem [ref=f17e301]:
+              - link "Features" [ref=f17e302] [cursor=pointer]:
+                - /url: /#features
+            - listitem [ref=f17e303]:
+              - link "Live clipping" [ref=f17e304] [cursor=pointer]:
+                - /url: /#live
+            - listitem [ref=f17e305]:
+              - link "Open source" [ref=f17e306] [cursor=pointer]:
+                - /url: /#open
+            - listitem [ref=f17e307]:
+              - link "FAQ" [ref=f17e308] [cursor=pointer]:
+                - /url: /#faq
+        - generic [ref=f17e309]:
+          - heading "Company" [level=4] [ref=f17e310]
+          - list [ref=f17e311]:
+            - listitem [ref=f17e312]:
+              - link "support@braivex.com" [ref=f17e313] [cursor=pointer]:
+                - /url: mailto:support@braivex.com
+            - listitem [ref=f17e314]:
+              - link "Create an account" [ref=f17e315] [cursor=pointer]:
+                - /url: /signup
+            - listitem [ref=f17e316]:
+              - link "Sign in" [ref=f17e317] [cursor=pointer]:
+                - /url: /login
+        - generic [ref=f17e318]:
+          - heading "Legal" [level=4] [ref=f17e319]
+          - list [ref=f17e320]:
+            - listitem [ref=f17e321]:
+              - link "Terms of Service" [ref=f17e322] [cursor=pointer]:
+                - /url: /terms
+            - listitem [ref=f17e323]:
+              - link "Privacy Policy" [ref=f17e324] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=f17e325]:
+              - link "Acceptable Use" [ref=f17e326] [cursor=pointer]:
+                - /url: /acceptable-use
+      - generic [ref=f17e327]:
+        - generic [ref=f17e328]: © 2026 Clipwyn by Braivex
+        - generic [ref=f17e329]:
+          - text: Braivex ·
+          - link "support@braivex.com" [ref=f17e330] [cursor=pointer]:
+            - /url: mailto:support@braivex.com

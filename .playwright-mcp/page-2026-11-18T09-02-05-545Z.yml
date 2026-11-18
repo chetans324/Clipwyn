@@ -1,0 +1,34 @@
+- main [ref=f29e2]:
+  - generic [ref=f29e3]:
+    - link [ref=f29e4] [cursor=pointer]:
+      - /url: /
+      - img "Clipwyn by Braivex" [ref=f29e5]
+    - heading "Welcome back" [level=2] [ref=f29e6]
+    - paragraph [ref=f29e7]: Sign in to get back to your clips.
+    - generic [ref=f29e8]:
+      - generic [ref=f29e9]:
+        - text: Email
+        - textbox "Email" [ref=f29e10]:
+          - /placeholder: you@example.com
+      - generic [ref=f29e11]:
+        - generic [ref=f29e12]:
+          - text: Password
+          - link "Forgot password?" [ref=f29e13] [cursor=pointer]:
+            - /url: /reset
+        - generic [ref=f29e14]:
+          - textbox "Password Forgot password? Show password" [ref=f29e15]:
+            - /placeholder: Your password
+          - button "Show password" [ref=f29e16] [cursor=pointer]
+      - button "Sign in" [ref=f29e19] [cursor=pointer]
+    - paragraph [ref=f29e20]:
+      - text: By continuing you agree to our
+      - link "Terms" [ref=f29e21] [cursor=pointer]:
+        - /url: /terms
+      - text: and
+      - link "Privacy Policy" [ref=f29e22] [cursor=pointer]:
+        - /url: /privacy
+      - text: .
+    - paragraph [ref=f29e23]:
+      - text: New to Clipwyn?
+      - link "Create an account" [ref=f29e24] [cursor=pointer]:
+        - /url: /signup
