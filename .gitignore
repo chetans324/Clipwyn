@@ -17,6 +17,7 @@ storage.json
 
 # ---- this computer only
 Braivex Theme/
+.playwright-mcp/
 .claude/
 CLAUDE.local.md
 .vscode/

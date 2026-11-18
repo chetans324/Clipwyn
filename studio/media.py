@@ -95,12 +95,31 @@ class _Quiet:
     def error(self, m): pass
 
 
+def _cookie_file() -> str | None:
+    cf = config.env("YOUTUBE_COOKIES_FILE") or config.env("PEAKCUT_COOKIES_FILE")
+    if cf and Path(cf).is_file():
+        return str(Path(cf).resolve())
+    for path in (
+        Path("/secrets/youtube_cookies.txt"),
+        Path("/secrets/cookies.txt"),
+        config.ROOT / "secrets" / "youtube_cookies.txt",
+        config.ROOT / "secrets" / "cookies.txt",
+    ):
+        if path.is_file():
+            return str(path.resolve())
+    return None
+
+
 def _ydl(opts):
     import yt_dlp
+    extra = {}
+    cf = _cookie_file()
+    if cf:
+        extra["cookiefile"] = cf
     # a channel or playlist link is answered as "a list" straight away, never walked video by video
     return yt_dlp.YoutubeDL({"noplaylist": True, "quiet": True, "no_warnings": True, "logger": _Quiet(),
                              "extract_flat": "in_playlist", "playlistend": 1, "socket_timeout": 20,
-                             "concurrent_fragment_downloads": 4, **opts})
+                             "concurrent_fragment_downloads": 4, **extra, **opts})
 
 
 def _video_format(height):
