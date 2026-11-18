@@ -97,17 +97,29 @@ class _Quiet:
 
 def _cookie_file() -> str | None:
     cf = config.env("YOUTUBE_COOKIES_FILE") or config.env("PEAKCUT_COOKIES_FILE")
+    src = None
     if cf and Path(cf).is_file():
-        return str(Path(cf).resolve())
-    for path in (
-        Path("/secrets/youtube_cookies.txt"),
-        Path("/secrets/cookies.txt"),
-        config.ROOT / "secrets" / "youtube_cookies.txt",
-        config.ROOT / "secrets" / "cookies.txt",
-    ):
-        if path.is_file():
-            return str(path.resolve())
-    return None
+        src = Path(cf)
+    else:
+        for path in (
+            Path("/secrets/youtube_cookies.txt"),
+            Path("/secrets/cookies.txt"),
+            config.ROOT / "secrets" / "youtube_cookies.txt",
+            config.ROOT / "secrets" / "cookies.txt",
+        ):
+            if path.is_file():
+                src = path
+                break
+    if not src:
+        return None
+    tmp_cf = Path("/tmp/youtube_cookies.txt")
+    try:
+        if not tmp_cf.exists() or src.stat().st_mtime > tmp_cf.stat().st_mtime:
+            import shutil
+            shutil.copy2(src, tmp_cf)
+        return str(tmp_cf)
+    except Exception:
+        return str(src.resolve())
 
 
 def _ydl(opts):
