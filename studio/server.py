@@ -22,7 +22,7 @@ from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, Redirect
 
 from . import admin as admins
 from . import account, load
-from . import (accounts, ai, alerts, auth, config, creators, ctx, db, jobs, live, media, posting,
+from . import (accounts, ai, alerts, auth, brain, config, creators, ctx, db, jobs, live, media, posting,
                profiles, render, safe, transcribe, usage)
 
 from . import tools as _tools  # noqa: E402
@@ -949,6 +949,63 @@ def rerender(jid: str, cid: str, body: dict = Body(...)):
     except (ValueError, TypeError) as e:
         raise HTTPException(400, str(e))
     return jobs.public(job)
+
+
+@app.post("/api/jobs/{jid}/clips/{cid}/regenerate-text")
+def regenerate_clip_text(jid: str, cid: str, body: dict = Body(default={})):
+    job = _job_or_404(jid)
+    clip = next((c for c in job["clips"] if c["id"] == cid), None)
+    if not clip:
+        raise HTTPException(404, "No such clip")
+    _throttle("regentext:" + ctx.uid(), 30, 600, "Too many regeneration requests. Please wait a moment.")
+
+    try:
+        start = float(body.get("start", clip.get("start", 0)))
+        end = float(body.get("end", clip.get("end", 0)))
+    except (ValueError, TypeError):
+        start = float(clip.get("start", 0))
+        end = float(clip.get("end", 0))
+
+    words = []
+    job_dir = Path(job.get("dir", ""))
+    words_file = job_dir / "words.json"
+    if words_file.is_file():
+        try:
+            words = json.loads(words_file.read_text(encoding="utf-8"))
+        except Exception:
+            words = []
+
+    clip_words = [w["w"] for w in words if isinstance(w, dict) and start - 0.5 <= float(w.get("s", 0)) <= end + 0.5]
+    text = " ".join(clip_words).strip()
+
+    game = job.get("options", {}).get("game")
+    meta = brain.describe(
+        text=text,
+        title=job.get("title", ""),
+        uploader=job.get("uploader", ""),
+        game=game,
+    )
+
+    if meta.get("hook"):
+        clip["hook"] = meta["hook"]
+    if meta.get("title"):
+        clip["title"] = meta["title"]
+    if meta.get("description"):
+        clip["description"] = meta["description"]
+    if meta.get("hashtags"):
+        clip["hashtags"] = meta["hashtags"]
+
+    jobs.save(job)
+    return {
+        "ok": True,
+        "clip": {
+            "id": cid,
+            "hook": clip.get("hook", ""),
+            "title": clip.get("title", ""),
+            "description": clip.get("description", ""),
+            "hashtags": clip.get("hashtags", []),
+        },
+    }
 
 
 @app.delete("/api/jobs/{jid}")

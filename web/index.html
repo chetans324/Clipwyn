@@ -2196,9 +2196,12 @@ function drawClipDlg(full) {
           <label class="f">Layout<select data-f="layout">${opts(S.status.layouts, c.layout)}</select></label></div>
         <div class="two"><label class="f">Start (seconds)<input data-f="start" type="number" step="0.5" value="${c.start}"></label>
           <label class="f">End (seconds)<input data-f="end" type="number" step="0.5" value="${c.end}"></label></div>
-        <h3>Post text</h3>
+        <div class="row" style="justify-content:space-between;align-items:center;margin-top:16px;margin-bottom:8px">
+          <h3 style="margin:0">Post text</h3>
+          <button type="button" class="btn sm dark" data-act="regentext" id="btn_regen_text" title="Regenerate Title, Big text and Description with AI">${ic("bolt")}AI Regenerate</button>
+        </div>
         <label class="f">Title<input data-f="title" value="${esc(c.title)}"></label>
-        <label class="f">Description<textarea data-f="description" rows="2">${esc(c.description)}</textarea></label>
+        <label class="f">Description<textarea data-f="description" rows="3">${esc(c.description)}</textarea></label>
         <button class="btn" data-act="remake">${ic("scissors")}Save and re-make clip</button>
         <h3>Post it</h3>
         <div id="dposts" class="row" style="gap:4px"></div>
@@ -2508,6 +2511,37 @@ document.addEventListener("click", async e => {
     if (a === "accremove") {
       if (!await ask("Disconnect this account?", "Posts still waiting for it will fail.", "Disconnect", true)) return;
       await api(`/api/accounts/${d.id}`, {method:"DELETE"}); await tick(); return drawSettings();
+    }
+    if (a === "regentext") {
+      const btn = $("#btn_regen_text") || b;
+      const was = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = `<span class="making" style="display:inline-block;padding:0;background:none;color:inherit;animation:pulse 1s infinite">AI generating…</span>`;
+      try {
+        const startVal = Number($("#clipdlg [data-f='start']").value || 0);
+        const endVal = Number($("#clipdlg [data-f='end']").value || 0);
+        const res = await send(`/api/jobs/${D.jid}/clips/${D.cid}/regenerate-text`, {start: startVal, end: endVal});
+        if (res && res.clip) {
+          const hookInput = $("#clipdlg [data-f='hook']");
+          const titleInput = $("#clipdlg [data-f='title']");
+          const descInput = $("#clipdlg [data-f='description']");
+          if (hookInput && res.clip.hook) hookInput.value = res.clip.hook;
+          if (titleInput && res.clip.title) titleInput.value = res.clip.title;
+          if (descInput && res.clip.description) descInput.value = res.clip.description;
+          const j = jobOf(D.jid), c = j?.clips.find(x => x.id === D.cid);
+          if (c) {
+            if (res.clip.hook) c.hook = res.clip.hook;
+            if (res.clip.title) c.title = res.clip.title;
+            if (res.clip.description) c.description = res.clip.description;
+            if (res.clip.hashtags) c.hashtags = res.clip.hashtags;
+          }
+          toast("Title, hook & description regenerated!", "ok");
+          render();
+        }
+      } finally {
+        if (btn) { btn.disabled = false; btn.innerHTML = was; }
+      }
+      return;
     }
     if (a === "remake") {
       const body = {}; $$("#clipdlg [data-f]").forEach(i => {

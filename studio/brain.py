@@ -371,29 +371,46 @@ def find_live_clips(words, z, now, chat=None, title="", uploader="", min_len=15,
 
 
 def describe(text, title="", uploader="", game=None, timeout=None):
-    """Hook, title and post text for a clip the user cut by hand."""
-    blank = {"score": 0, "category": "other", "hook": "", "title": "", "description": "", "hashtags": [],
-             "highlight_words": [], "reason": "Clipped by hand."}
-    if len(text.split()) < 4:
-        return blank
-    prompt = (f"A streamer's viewer clipped this moment by hand.\nVideo title: {_safe(title) or 'unknown'}\n"
-              f"Channel: {_safe(uploader) or 'unknown'}\n\nReturn exactly one item describing it. Set start and end to 0."
+    """Hook, title and post text for a clip (cut by hand or regenerated with AI)."""
+    clean_title = re.sub(r"[^\w\s]", "", title or "")
+    tags = ["Shorts", "Trending", "Viral"]
+    if game:
+        tags = list(games.tags_of(game)) + tags
+    hash_str = " ".join(f"#{t}" for t in tags[:6])
+
+    hook_candidate = "INSANE MOMENT"
+    if text and text.strip():
+        peak = [w for w in re.sub(r"[^\w\s]", "", text).split() if len(w) > 2][:4]
+        if peak:
+            hook_candidate = " ".join(peak).upper()
+    c_title = f"{uploader + ' - ' if uploader else ''}{clean_title[:40] or 'Epic Moment'}"
+    c_desc = f"{uploader + ': ' if uploader else ''}{title or 'Viral moment'}. Watch what happens next!"
+    if hash_str:
+        c_desc = f"{c_desc}\n\n{hash_str}"
+    fallback = {
+        "score": 75, "category": "other", "hook": hook_candidate[:60],
+        "title": c_title[:70], "description": c_desc, "hashtags": tags[:8],
+        "highlight_words": [], "reason": "Smart moment highlight."
+    }
+
+    sample = text.strip() if text and text.strip() else (title or "Exciting moment")
+    prompt = (f"A viewer clipped this moment from a video.\nVideo title: {_safe(title) or 'unknown'}\n"
+              f"Channel: {_safe(uploader) or 'unknown'}\n\n"
+              f"Return exactly one item describing it with an irresistible hook, catchy title, engaging description, and viral hashtags. Set start and end to 0."
               + _game_rules(game)
-              + RULES.format(min_len=0, max_len=0, transcript=_safe(text, 8000)))
+              + RULES.format(min_len=0, max_len=0, transcript=_safe(sample, 8000)))
     try:
-        out, _m, _u = ask_ai(prompt, purpose="Hand clip: title and hook", timeout=timeout)
+        out, _m, _u = ask_ai(prompt, purpose="Clip: title, hook and description", timeout=timeout)
         if not out:
-            # A quiet or half-finished moment: the answer came back empty. The viewer asked for this
-            # clip by hand, so it is asked once more, plainly.
-            out, _m, _u = ask_ai(prompt + "\n\nReturn one item. The moment is short; describe what was said.",
-                                 purpose="Hand clip: title and hook", timeout=timeout)
+            out, _m, _u = ask_ai(prompt + "\n\nReturn one item. Describe what happens or what was said.",
+                                 purpose="Clip: title, hook and description", timeout=timeout)
         if not out:
-            return blank
+            return fallback
         c = _tidy(out[0], 0, 0, game)
-        c["reason"] = "Clipped by hand."
+        c["reason"] = "AI generated description and hook."
         return c
     except Exception:  # noqa: BLE001
-        return blank
+        return fallback
 
 
 # ---------------------------------------------------------------- live: two judges that never see each other's input
