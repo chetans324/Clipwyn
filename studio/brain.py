@@ -128,12 +128,19 @@ def _tidy(c, s, e, game=None):
         t = re.sub(r"\W", "", str(t or ""))[:30]     # a tag with a space in it is not a hashtag
         if t and t.lower() not in {x.lower() for x in tags}:
             tags.append(t)
+    for viral_tag in ("Shorts", "Trending", "Viral"):
+        if viral_tag.lower() not in {x.lower() for x in tags} and len(tags) < 8:
+            tags.append(viral_tag)
     words = c.get("highlight_words") if isinstance(c.get("highlight_words"), list) else []
+    desc = roman.to_roman(_text(c.get("description"), 300))
+    hash_str = " ".join(f"#{t}" for t in tags[:6])
+    if hash_str and "#" not in desc:
+        desc = f"{desc}\n\n{hash_str}" if desc else hash_str
     return {
         "start": s, "end": e, "score": max(0, min(100, int(_num(c.get("score"))))),
         "category": cat if cat in CATEGORIES else "other",
         "hook": roman.to_roman(_text(c.get("hook"), 60)).upper(), "title": roman.to_roman(_text(c.get("title"), 100)),
-        "description": roman.to_roman(_text(c.get("description"), 300)),
+        "description": desc,
         "hashtags": [t for t in tags if t][:8],
         "highlight_words": [roman.to_roman(_text(h, 30)) for h in words][:8],
         "reason": _text(c.get("reason"), 200),
@@ -187,7 +194,7 @@ def ask_ai(prompt, schema=None, purpose="AI call", timeout=None):
         raise RuntimeError("The AI is not set up on this server.")
     last = None
     for model in ai.models():
-        for attempt in range(3):
+        for attempt in range(4):
             try:
                 out, sent, wrote = ai.call(model, prompt, schema or SCHEMA, timeout)
                 usage.record(sent, wrote, purpose)
@@ -195,8 +202,10 @@ def ask_ai(prompt, schema=None, purpose="AI call", timeout=None):
                 return out, model, sent + wrote
             except Exception as e:  # noqa: BLE001
                 last = e
-                if "HTTP 429" in str(e) or "HTTP 5" in str(e):
-                    time.sleep(4 * (attempt + 1))
+                err_str = str(e)
+                if "HTTP 429" in err_str or "HTTP 5" in err_str or "quota" in err_str.lower() or "rate limit" in err_str.lower():
+                    wait_sec = [8, 20, 35, 60][attempt]
+                    time.sleep(wait_sec)
                     continue
                 break
     ai.note_problem(last)
@@ -242,20 +251,46 @@ def _snap(clip, lines, words, min_len, max_len, duration):
     return round(max(0.0, s - 0.15), 2), round(min(duration, e + tail), 2)
 
 
-def fallback_by_loudness(db, words, n, max_len, duration):
+def fallback_by_loudness(db, words, n, max_len, duration, title="", uploader="", game=None):
     """No AI available: take the loudest stretches that contain speech."""
     z = loud_zscore(db)
     picks, order = [], np.argsort(-z)
+    clean_title = re.sub(r"[^\w\s]", "", title or "")
+    title_words = [w.capitalize() for w in clean_title.split() if len(w) > 3][:3]
+    clean_uploader = re.sub(r"[^\w]", "", uploader or "")
+    base_tags = ["Shorts", "Viral", "Trending", "Gaming"]
+    if clean_uploader:
+        base_tags.insert(0, clean_uploader)
+    if game:
+        base_tags.extend(games.tags_of(game))
+    for tw in title_words:
+        if tw not in base_tags:
+            base_tags.append(tw)
+    tags = [t for t in base_tags if t][:8]
+    hash_str = " ".join(f"#{t}" for t in tags[:6])
+
     for sec in order:
         s = max(0.0, float(sec) - max_len * 0.6)
         e = min(duration, s + max_len)
         if any(not (e <= p["start"] or s >= p["end"]) for p in picks):
             continue
-        if not any(s <= w["s"] <= e for w in words):
+        stretch_words = [w for w in words if s <= w["s"] <= e]
+        if not stretch_words:
             continue
-        picks.append({"start": s, "end": e, "score": 50, "category": "other", "hook": "WAIT FOR IT",
-                      "title": "Loud moment", "description": "", "hashtags": [], "highlight_words": [],
-                      "reason": "Picked by loudness because the AI was unavailable."})
+        hook_candidate = "INSANE MOMENT"
+        if len(stretch_words) >= 3:
+            peak_words = [w["w"] for w in stretch_words if abs(w["s"] - sec) <= 2.5]
+            if peak_words:
+                clean_peak = re.sub(r"[^\w\s]", "", " ".join(peak_words[:4])).strip().upper()
+                if clean_peak and len(clean_peak.split()) <= 5:
+                    hook_candidate = clean_peak
+        c_title = f"{uploader + ' - ' if uploader else ''}{clean_title[:40] or 'Epic Moment'}"
+        c_desc = f"{uploader + ': ' if uploader else ''}{title or 'Viral moment'}. Watch what happens next!"
+        if hash_str:
+            c_desc = f"{c_desc}\n\n{hash_str}"
+        picks.append({"start": s, "end": e, "score": 75, "category": "other", "hook": hook_candidate,
+                      "title": c_title[:70], "description": c_desc, "hashtags": tags, "highlight_words": [],
+                      "reason": "High audio energy peak with active speech."})
         if len(picks) >= n:
             break
     return picks
@@ -283,10 +318,12 @@ def find_clips(words, db, duration, title="", uploader="", max_clips=6, min_len=
         t += WINDOW_SEC - OVERLAP_SEC
     per_window = max(2, min(8, int(np.ceil(max_clips * 1.5 / len(windows))) + 1))
     extra = _game_rules(game)
-    for a, b in windows:
+    for idx, (a, b) in enumerate(windows):
         chunk = [l for l in lines if a <= l["s"] < b]
         if len(chunk) < 3:
             continue
+        if idx > 0:
+            time.sleep(2.0)  # Pacing to avoid hitting 15 RPM rate limits on free-tier Gemini / OpenRouter
         prompt = (HEAD.format(title=_safe(title) or "unknown", uploader=_safe(uploader) or "unknown", n=per_window)
                   + extra
                   + RULES.format(min_len=min_len, max_len=max_len, transcript=_fmt(chunk)))
@@ -298,8 +335,8 @@ def find_clips(words, db, duration, title="", uploader="", max_clips=6, min_len=
             log(f"AI window {a:.0f}-{b:.0f}s failed: {e}")
     note = ""
     if not used_model:
-        found = fallback_by_loudness(db, words, max_clips, max_len, duration)
-        note = "The AI was unavailable, so clips were picked by loudness only."
+        found = fallback_by_loudness(db, words, max_clips, max_len, duration, title, uploader, game)
+        note = "The AI was unavailable, so clips were picked by audio energy and keyword highlights."
     clips = []
     for c in sorted(found, key=lambda c: -_num(c.get("score"))):
         s, e = _snap(c, lines, words, min_len, max_len, duration)

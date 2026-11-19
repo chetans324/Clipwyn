@@ -2377,7 +2377,10 @@ document.addEventListener("click", async e => {
     }
     if (a === "copy") {
       const c = jobOf(d.j).clips.find(x => x.id === d.c);
-      await navigator.clipboard.writeText(`${c.title}\n\n${c.description}\n\n${(c.hashtags || []).map(h => "#" + h).join(" ")}`); return toast("Post text copied", "ok");
+      const desc = c.description || "";
+      const tags = (c.hashtags || []).map(h => "#" + h).filter(h => !desc.includes(h)).join(" ");
+      const postText = tags ? `${c.title}\n\n${desc}\n\n${tags}` : `${c.title}\n\n${desc}`;
+      await navigator.clipboard.writeText(postText.trim()); return toast("Post text copied", "ok");
     }
     if (a === "logout") { await api("/api/auth/logout", {method:"POST"}); location.href = "/"; return; }
     if (a === "pwsave") {

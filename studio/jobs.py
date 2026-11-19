@@ -427,17 +427,19 @@ def _wait_for_clips(job, futures, began, workers):
     """Wait for a video's clips, but not for ever. A clip that hangs (a download that stalls, an encoder that
     freezes) used to keep the whole video "in progress", and no other clip could be re-made. Now it is marked as
     failed after CLIP_MINUTES and the video finishes with the clips that did work."""
-    left, given_up = list(futures), 0
+    left = list(futures)
     late = "This clip took too long and was stopped. Open it and press Save and re-make to try again."
     while left:
         still = []
         for f, clip in left:
             if f.done():
-                f.result()
+                try:
+                    f.result()
+                except Exception as e:  # noqa: BLE001
+                    clip.update(status="error", error=safe.friendly(e, 400))
                 continue
             t = began.get(clip["id"])
-            if (t and time.time() - t > CLIP_MINUTES * 60) or (not t and given_up >= workers):
-                given_up += 1
+            if t and time.time() - t > CLIP_MINUTES * 60:
                 clip.update(status="error", error=late)
                 creators.log(job["creator"], f"Clip stopped after {CLIP_MINUTES:g} minutes: {clip.get('title') or clip.get('hook') or clip['id']}")
                 save(job)
@@ -493,22 +495,27 @@ def _fetch_piece(job, clip, full_audio):
     """Long videos: download just this clip's stretch and pin down exactly where it starts."""
     d = Path(job["dir"])
     o = job["options"]
-    try:
-        want = max(0.0, clip["start"] - PAD)
-        piece = media.download_section(job["source"]["url"], d / "clips", f"{clip['id']}.src", want,
-                                       min(job["duration"], clip["end"] + PAD), int(o["quality"]))
-        wav = d / "clips" / f"{clip['id']}.wav"
-        media.extract_audio(piece, wav)
-        part = media.load_audio(wav)
-        wav.unlink(missing_ok=True)
-        meta = media.probe(piece)
-        off = media.find_offset(full_audio, part, want)
-        clip.update(src=str(piece), src_offset=round(off, 2), src_end=round(off + meta["duration"], 2))
-        clip["start"], clip["end"] = max(clip["start"], clip["src_offset"]), min(clip["end"], clip["src_end"])
-        job.setdefault("width", meta["width"])
-        job.setdefault("height", meta["height"])
-    except Exception as e:  # noqa: BLE001
-        clip.update(status="error", error=f"Could not fetch this part of the video: {safe.friendly(e, 250)}")
+    want = max(0.0, clip["start"] - PAD)
+    last_err = None
+    for attempt in range(2):
+        try:
+            piece = media.download_section(job["source"]["url"], d / "clips", f"{clip['id']}.src", want,
+                                           min(job["duration"], clip["end"] + PAD), int(o["quality"]))
+            wav = d / "clips" / f"{clip['id']}.wav"
+            media.extract_audio(piece, wav)
+            part = media.load_audio(wav)
+            wav.unlink(missing_ok=True)
+            meta = media.probe(piece)
+            off = media.find_offset(full_audio, part, want)
+            clip.update(src=str(piece), src_offset=round(off, 2), src_end=round(off + meta["duration"], 2))
+            clip["start"], clip["end"] = max(clip["start"], clip["src_offset"]), min(clip["end"], clip["src_end"])
+            job.setdefault("width", meta["width"])
+            job.setdefault("height", meta["height"])
+            return
+        except Exception as e:  # noqa: BLE001
+            last_err = e
+            time.sleep(2)
+    clip.update(status="error", error=f"Could not fetch this part of the video: {safe.friendly(last_err, 250)}")
 
 
 BLOCK = 10 * 60         # long videos are transcribed and clipped one block at a time
