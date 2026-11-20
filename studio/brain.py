@@ -370,6 +370,15 @@ def find_live_clips(words, z, now, chat=None, title="", uploader="", min_len=15,
     return clips, spent
 
 
+def _one_line(value, limit=40):
+    """Keep a regenerated title to one phone-width line, ending on a whole word."""
+    # shortcut: 40 characters approximates one line at phone font size; lower it if the post font grows
+    s = " ".join(str(value or "").split())
+    if len(s) <= limit:
+        return s
+    return s[:limit].rsplit(" ", 1)[0].rstrip(" ,;:-") or s[:limit]
+
+
 def describe(text, title="", uploader="", game=None, timeout=None):
     """Hook, title and post text for a clip (cut by hand or regenerated with AI)."""
     clean_title = re.sub(r"[^\w\s]", "", title or "")
@@ -396,21 +405,28 @@ def describe(text, title="", uploader="", game=None, timeout=None):
     sample = text.strip() if text and text.strip() else (title or "Exciting moment")
     prompt = (f"A viewer clipped this moment from a video.\nVideo title: {_safe(title) or 'unknown'}\n"
               f"Channel: {_safe(uploader) or 'unknown'}\n\n"
-              f"Return exactly one item describing it with an irresistible hook, catchy title, engaging description, and viral hashtags. Set start and end to 0."
+              f"Return exactly one item describing the moment. Set start and end to 0."
               + _game_rules(game)
-              + RULES.format(min_len=0, max_len=0, transcript=_safe(sample, 8000)))
+              + RULES.format(min_len=0, max_len=0, transcript=_safe(sample, 8000))
+              + "\nFor the post text, write:\n"
+              "- title: a short hook that makes someone stop scrolling. Sum up the whole clip and leave a"
+              "  reason to watch to the end. At most 40 characters so it fits on one line on a phone."
+              "  Ignore the 70-character title rule above.\n"
+              "- description: one or two punchy sentences that build on the title and pull the viewer in.\n"
+              "- hashtags: short tags without #, added to the description.\n")
+    c = fallback
     try:
         out, _m, _u = ask_ai(prompt, purpose="Clip: title, hook and description", timeout=timeout)
         if not out:
             out, _m, _u = ask_ai(prompt + "\n\nReturn one item. Describe what happens or what was said.",
                                  purpose="Clip: title, hook and description", timeout=timeout)
-        if not out:
-            return fallback
-        c = _tidy(out[0], 0, 0, game)
-        c["reason"] = "AI generated description and hook."
-        return c
+        if out:
+            c = _tidy(out[0], 0, 0, game)
+            c["reason"] = "AI generated description and hook."
     except Exception:  # noqa: BLE001
-        return fallback
+        pass
+    c["title"] = _one_line(c.get("title", ""))
+    return c
 
 
 # ---------------------------------------------------------------- live: two judges that never see each other's input

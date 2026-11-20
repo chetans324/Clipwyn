@@ -35,10 +35,22 @@ with patch.object(brain, "ask_ai", side_effect=[([], "m", 1), ([item], "m", 2)])
     check("the second answer is used", c["hook"], "WILD NIGHT")
 with patch.object(brain, "ask_ai", side_effect=[([], "m", 1), ([], "m", 2)]):
     c = brain.describe(words, "GTA V #16", "Chan")
-    check("two empty answers give a clip with no hook, not an error", c["hook"], "")
+    check("two empty answers still give a usable title and hook", bool(c["hook"]) and bool(c["title"]))
 with patch.object(brain, "ask_ai", side_effect=RuntimeError("The AI did not answer")):
     c = brain.describe(words, "GTA V #16", "Chan")
-    check("a failed call gives a clip with no hook, not an error", c["hook"], "")
+    check("a failed call still gives a usable title and hook", bool(c["hook"]) and bool(c["title"]))
+
+# ---- regenerated post text: a single-line hook title and a description with hashtags
+long = dict(item, title="THIS LONG TITLE WILL NEVER FIT ON ONE PHONE LINE IN A MOBILE FEED",
+            description="You will not believe how this one ends, watch the whole thing.",
+            hashtags=["Gaming", "Funny"])
+with patch.object(brain, "ask_ai", return_value=([long], "m", 3)) as ask:
+    c = brain.describe(words, "GTA V #16", "Chan")
+    prompt = ask.call_args.args[0]
+    check("the prompt asks for a one-line phone hook title", "one line on a phone" in prompt)
+    check("a long title is trimmed to one phone line", len(c["title"]) <= 40)
+    check("the trimmed title ends on a whole word", not c["title"].endswith((" ", ",", ";", ":", "-")))
+    check("the description carries hashtags", "#" in c["description"])
 
 print("ALL PASSED" if not fails else f"{len(fails)} FAILED")
 sys.exit(1 if fails else 0)
